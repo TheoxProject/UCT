@@ -5,7 +5,7 @@
 layout: home
 title: Project introduction
 cover: true
-#accent_image: 
+accent_image: /assets/img/paragliding.jpg
 accent_color: rgb(225, 72, 5)
 ---
 
