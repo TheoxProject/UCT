@@ -42,14 +42,14 @@ plugins:
 #accent_color: rgb(1,1,1)
 
 author:
-  name:  Lucas Ehret
-  email: lucas.ehret@epfl.ch
+  name:  Théo PUGIN-BRON
+  email: theo.pugin-bron@epfl.ch
 
 menu:
-  - title: • A story about movies •
-    url:   /project/
-  - title: • Team •
-    url:   /team/
+  - title: • Liste des courses •
+    url:   /Course/
+  - title: • YellowPack •
+    url:   /YellowPack/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
