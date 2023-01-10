@@ -49,7 +49,7 @@ menu:
   - title: • Liste des courses •
     url:   /Course/
   - title: • YellowPack •
-    url:   /YellowPack/
+    url:   /yellowpack/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
