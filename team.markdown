@@ -1,7 +1,7 @@
 ---
 layout: page
 title: YellowPack
-permalink: /yellowpack/
+permalink: /YellowPack/
 #accent_image: /assets/img/cover_pic2.png
 ---
 

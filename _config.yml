@@ -47,9 +47,9 @@ author:
 
 menu:
   - title: • Liste des courses •
-    url:   /Course/
+    url:   /Calendrier/
   - title: • YellowPack •
-    url:   /yellowpack/
+    url:   /YellowPack/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
