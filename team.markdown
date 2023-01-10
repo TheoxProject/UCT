@@ -9,7 +9,7 @@ permalink: /YellowPack/
   <div style="float: left;">
     <img src="/assets/img/cmoi.png" alt="" style="float: right; margin-top: 1em;width:40%">
     <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Théo Pugin-Bron</h2>
-      <&#127775> Grimpeur
+      '&#127775' Grimpeur
   </div>
 </div>
 
@@ -36,4 +36,8 @@ permalink: /YellowPack/
     Spécialité
   </div>
 </div>
+'''
+&#127775
+# &#127775
 
+'''
