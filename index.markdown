@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Project introduction
+title: Union Cycliste Thononaise
 cover: true
 accent_image: /assets/img/paragliding.jpg
 accent_color: rgb(225, 72, 5)
@@ -21,9 +21,4 @@ j { color: GoldenRod }
 
 
 ## <j>Welcome</j>
-Welcome to the website of our ADA project. [Here][git_link] you can find the Github repository to find all the calculations that led to the plots used during the analysis. To access to the core of this project click [here](/project/), or if you want to learn more about the team it's up [there](/team.markdown). 
-
-
-
-## <j>Choice of datasets and question</j> 
-Among all the proposed datasets, we choose to retain the [CMU movie summary corpus][CMU]. This dataset gathers informations such as the movie title, its genre, the release date, the langage, the casting, but also a summary of the preprocessed with the Standford CoreNLP pipeline. With all these informations available, we chose to study the **representation of stereotypes in cinema**. 
+Welcome to the UCT website
