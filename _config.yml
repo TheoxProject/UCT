@@ -46,10 +46,12 @@ author:
   email: theo.pugin-bron@epfl.ch
 
 menu:
-  - title: • Liste des courses •
-    url:   /Calendrier/
   - title: • YellowPack •
     url:   /YellowPack/
+  - title: • Liste des courses •
+    url:   /Calendrier/
+  - title: • Résultats •
+    url:   /resultats/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
