@@ -18,7 +18,7 @@ j { color: GoldenRod }
 
 ## <j>Année 2023 </j>
 
-| Date | Lieu | Épreuve | Catégorie | Classement |*
+| Date | Lieu | Épreuve | Catégorie | Classement |
 
 
 ![image](/assets/img/under_construction.jpg)
