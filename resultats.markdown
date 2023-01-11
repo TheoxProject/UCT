@@ -6,4 +6,4 @@ permalink: /resultats/
 ---
 
 
-![image](/assets/img/under_construction.png)
+![image](/assets/img/under_construction.jpg)

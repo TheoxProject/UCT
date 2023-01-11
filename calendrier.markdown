@@ -21,4 +21,4 @@ j { color: GoldenRod }
 | Date | Lieu | Épreuve | Catégorie | Classement |*
 
 
-![image](/assets/img/under_construction.png)
+![image](/assets/img/under_construction.jpg)
