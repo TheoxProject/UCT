@@ -5,9 +5,6 @@ permalink: /Calendrier/
 #accent_image: /assets/img/cover_pic2.png
 ---
 
-<style>
-j { color: GoldenRod }
-</style>
 
 
 ## <j>Année 2023 </j>
