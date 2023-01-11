@@ -52,6 +52,8 @@ menu:
     url:   /Calendrier/
   - title: • Résultats •
     url:   /resultats/
+  - title: • Organisation •
+    url:   /org/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
