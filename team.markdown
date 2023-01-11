@@ -4,11 +4,6 @@ title: YellowPack
 permalink: /YellowPack/
 #accent_image: /assets/img/cover_pic2.png
 ---
-<style>
-  body {
-    background-color: aliceblue;
-  }
-</style>
 
 
 <div style="clear: both;">

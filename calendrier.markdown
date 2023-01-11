@@ -6,12 +6,6 @@ permalink: /Calendrier/
 ---
 
 <style>
-  body {
-    background-color: aliceblue;
-  }
-</style>
-
-<style>
 j { color: GoldenRod }
 </style>
 
