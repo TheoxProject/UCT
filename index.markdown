@@ -5,20 +5,12 @@
 layout: home
 title: Union Cycliste Thononaise
 cover: true
-accent_image: /assets/img/paragliding.jpg
+accent_image: /assets/img/homePicture.jpg
 accent_color: rgb(225, 72, 5)
 ---
 
-<style>
-  body {
-    background-color: LemonChiffon;
-  }
-</style>
-
-<style>
-j { color: GoldenRod }
-</style>
+## <j>Club de cyclisme de Thonon-les-Bains</j>
 
 
-## <j>Welcome</j>
+### <j>Welcome</j>
 Welcome to the UCT website
