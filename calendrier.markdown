@@ -7,7 +7,7 @@ permalink: /Calendrier/
 
 <style>
   body {
-    background-color: LemonChiffon;
+    background-color: aliceblue;
   }
 </style>
 
