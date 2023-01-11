@@ -2,7 +2,7 @@
 layout: page
 title: Calendrier
 permalink: /Calendrier/
-#accent_image: /assets/img/cover_pic2.png
+accent_image: /assets/img/homePicture.jpg
 ---
 
 

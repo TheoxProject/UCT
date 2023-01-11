@@ -2,7 +2,7 @@
 layout: page
 title: Organisation courses
 permalink: /org/
-#accent_image: /assets/img/cover_pic2.png
+accent_image: /assets/img/homePicture.jpg
 ---
 
 

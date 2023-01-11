@@ -2,7 +2,7 @@
 layout: page
 title: Résultats
 permalink: /resultats/
-#accent_image: /assets/img/cover_pic2.png
+accent_image: /assets/img/homePicture.jpg
 ---
 
 
