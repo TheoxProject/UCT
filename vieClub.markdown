@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Résultats
-permalink: /resultats/
+title: Vie du club
+permalink: /vieClub/
 accent_image: /assets/img/homePicture.jpg
 ---
 

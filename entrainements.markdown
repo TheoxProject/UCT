@@ -1,13 +1,10 @@
 ---
 layout: page
-title: Organisation courses
-permalink: /org/
+title: Entraînements
+permalink: /entrainements/
 accent_image: /assets/img/homePicture.jpg
 ---
 
-
-
-## Chrono OMS : 
 
 
 
