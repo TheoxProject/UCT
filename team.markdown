@@ -8,7 +8,7 @@ accent_image: /assets/img/homePicture.jpg
 
 <div style="clear: both;">
   <div style="float: left;">
-    <img src="/assets/img/cmoi.png" alt="" style="float: right; margin-top: 1em;width:40%">
+    <img src="/assets/img/cmoi.jpg" alt="" style="float: right; margin-top: 1em;width:40%">
     <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Théo Pugin-Bron</h2>
       '&#127775' Grimpeur
   </div>
