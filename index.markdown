@@ -12,5 +12,6 @@ accent_color: rgb(225, 72, 5)
 ## <j>Club de cyclisme de Thonon-les-Bains</j>
 
 
-### <j>Welcome</j>
-Welcome to the UCT website
+
+
+## <j>Partenaires</j>
