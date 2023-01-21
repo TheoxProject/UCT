@@ -12,7 +12,7 @@ Vous pouvez trouver sur cette page la listes des courses de la région Auvergne 
 ![image](/Calendrier_courses/access.png)
 
 # Contre la montre :
-![image](/Calendrier_courses/contre_la_montre.png)
+![image](/Calendrier_courses/chrono.png)
 
 # Gentlemen :
 ![image](/Calendrier_courses/gentlemen.png)
