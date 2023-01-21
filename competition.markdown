@@ -8,9 +8,18 @@ Vous pouvez trouver sur cette page la listes des courses de la région Auvergne 
 
 
 ## Courses 2023
+# Catégorie access :
+![image](/Calendrier_courses/access.png)
 
-| Date | Lieu | Épreuve | Catégorie | Coureurs engagés |
-|:---:|:---:|:---:|:---:|:---:|
+# Contre la montre :
+![image](/Calendrier_courses/contre_la_montre.png)
+
+# Gentlemen :
+![image](/Calendrier_courses/gentlemen.png)
+
+# Grimpée :
+![image](/Calendrier_courses/grimpée.png)
+
 
 
 ![image](/assets/img/under_construction.jpg)
