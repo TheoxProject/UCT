@@ -25,3 +25,8 @@ Vous pouvez trouver sur cette page la listes des courses de la région Auvergne 
 
 
 ![image](/assets/img/under_construction.jpg)
+
+
+## Carte des courses :
+
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=12nUP1V9-5k9hE2ittGRuztd3uciBdTY&ehbc=2E312F" width="640" height="480"></iframe>
