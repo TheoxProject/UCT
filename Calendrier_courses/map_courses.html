@@ -1,0 +1,3380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dbb5255598866b2eec2aa86289a3a263 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+                <div style="position: fixed;
+                            background-color:white; opacity:0.75;
+                            bottom: 20px; right: 20px; width: 180px; height: 200px;
+                            border:2px solid grey; z-index:9999; font-size:14px;
+                            ">&nbsp; <b>Légende :</b> <br>
+                                &nbsp; Gentlemen &nbsp; <i class="fa fa-bicycle fa-2x" style="color:blue"></i><br>
+                                &nbsp; Grimpée &nbsp; <i class="fa fa-bicycle fa-2x" style="color:green"></i><br>
+                                &nbsp; Test chronométré &nbsp; <i class="fa fa-bicycle fa-2x" style="color:orange"></i><br>
+                                &nbsp; Access &nbsp; <i class="fa fa-bicycle fa-2x" style="color:purple"></i><br>
+                                &nbsp; Cyclosportive &nbsp; <i class="fa fa-bicycle fa-2x" style="color:red"></i>
+                </div>
+                
+    
+            <div class="folium-map" id="map_dbb5255598866b2eec2aa86289a3a263" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dbb5255598866b2eec2aa86289a3a263 = L.map(
+                "map_dbb5255598866b2eec2aa86289a3a263",
+                {
+                    center: [46.0, 6.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1d01e23da6124de7bc62be0ba13649d5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dbb5255598866b2eec2aa86289a3a263);
+        
+    
+            var feature_group_f310906ee39be8e9793e928af493727d = L.featureGroup(
+                {}
+            ).addTo(map_dbb5255598866b2eec2aa86289a3a263);
+        
+    
+            var marker_c13313ba455a8db4ae9583fb47875cf4 = L.marker(
+                [46.19484354502668, 5.170362228760835],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_b9cae3509048a215e6808c64b81091c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_c13313ba455a8db4ae9583fb47875cf4.setIcon(icon_b9cae3509048a215e6808c64b81091c2);
+        
+    
+        var popup_883ade3f92f456a02a314c8515fcfb1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0937d550876bcb11f5804fc8ccb2a7a9 = $(`<div id="html_0937d550876bcb11f5804fc8ccb2a7a9" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DE SAINT REMY - 01/10/2023</div>`)[0];
+                popup_883ade3f92f456a02a314c8515fcfb1a.setContent(html_0937d550876bcb11f5804fc8ccb2a7a9);
+            
+        
+
+        marker_c13313ba455a8db4ae9583fb47875cf4.bindPopup(popup_883ade3f92f456a02a314c8515fcfb1a)
+        ;
+
+        
+    
+    
+            var marker_221e04cc5db62737e75633403473f98d = L.marker(
+                [46.063581528609674, 6.37459203576014],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_4fe58844415e1bc13240c8c45f269ccf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_221e04cc5db62737e75633403473f98d.setIcon(icon_4fe58844415e1bc13240c8c45f269ccf);
+        
+    
+        var popup_15f80e20042620f792e3a5e1424be75c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6ecdc373fc582e88b9b05954574b5c0 = $(`<div id="html_b6ecdc373fc582e88b9b05954574b5c0" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE SAINT PIERRE EN FAUCIGNY - 01/10/2023</div>`)[0];
+                popup_15f80e20042620f792e3a5e1424be75c.setContent(html_b6ecdc373fc582e88b9b05954574b5c0);
+            
+        
+
+        marker_221e04cc5db62737e75633403473f98d.bindPopup(popup_15f80e20042620f792e3a5e1424be75c)
+        ;
+
+        
+    
+    
+            var marker_f4a67eaf4bcd39664f65031d6888a858 = L.marker(
+                [46.19717611044153, 4.963016606797671],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_0eb90db3d72c6731868219316b84d43b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_f4a67eaf4bcd39664f65031d6888a858.setIcon(icon_0eb90db3d72c6731868219316b84d43b);
+        
+    
+        var popup_139453899c4796c0dbed05e0f2bc2210 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fa52070dbf8f209800ae230b52031dc = $(`<div id="html_4fa52070dbf8f209800ae230b52031dc" style="width: 100.0%; height: 100.0%;">Access hommes - 3ÈME TOUR DU HAUT BUGEY - 17/09/2023</div>`)[0];
+                popup_139453899c4796c0dbed05e0f2bc2210.setContent(html_4fa52070dbf8f209800ae230b52031dc);
+            
+        
+
+        marker_f4a67eaf4bcd39664f65031d6888a858.bindPopup(popup_139453899c4796c0dbed05e0f2bc2210)
+        ;
+
+        
+    
+    
+            var marker_08667e976f25d607ccbe08cfc002b2af = L.marker(
+                [45.192573365251576, 5.761333192214329],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_839a14bc2dc072a1e9315f1d1ce9a653 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_08667e976f25d607ccbe08cfc002b2af.setIcon(icon_839a14bc2dc072a1e9315f1d1ce9a653);
+        
+    
+        var popup_4677bd00bf3fd6ba6049eabbc5b30492 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3fef144c5501d866705a84d50d1bcb5 = $(`<div id="html_a3fef144c5501d866705a84d50d1bcb5" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DU DOMAINE UNIVERSITAIRE DE GRENOBLE - 17/09/2023</div>`)[0];
+                popup_4677bd00bf3fd6ba6049eabbc5b30492.setContent(html_a3fef144c5501d866705a84d50d1bcb5);
+            
+        
+
+        marker_08667e976f25d607ccbe08cfc002b2af.bindPopup(popup_4677bd00bf3fd6ba6049eabbc5b30492)
+        ;
+
+        
+    
+    
+            var marker_fa3cfd0d08a0f1eab78f2bd7f5513ca9 = L.marker(
+                [46.066130091642165, 6.548280018374927],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_df318ab2b69e03a1eafa5e31cdfd484d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_fa3cfd0d08a0f1eab78f2bd7f5513ca9.setIcon(icon_df318ab2b69e03a1eafa5e31cdfd484d);
+        
+    
+        var popup_88d73498474b1a27f9ad8e059829f76e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_748069ca5660da9e1390eed7beee0f6f = $(`<div id="html_748069ca5660da9e1390eed7beee0f6f" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DU FAUCIGNY - TROPHEE JEAN LAIN SKODA - 10/09/2023</div>`)[0];
+                popup_88d73498474b1a27f9ad8e059829f76e.setContent(html_748069ca5660da9e1390eed7beee0f6f);
+            
+        
+
+        marker_fa3cfd0d08a0f1eab78f2bd7f5513ca9.bindPopup(popup_88d73498474b1a27f9ad8e059829f76e)
+        ;
+
+        
+    
+    
+            var marker_e1791eea4d4afc3559261bff8a6e3a11 = L.marker(
+                [45.39221281037254, 5.60536067726745],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_a53383acef98944a90c1abc841c65818 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_e1791eea4d4afc3559261bff8a6e3a11.setIcon(icon_a53383acef98944a90c1abc841c65818);
+        
+    
+        var popup_613e38c0b862d05053828ad670705b61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe28b7b1ffd9b198483a66d89773af53 = $(`<div id="html_fe28b7b1ffd9b198483a66d89773af53" style="width: 100.0%; height: 100.0%;">Access hommes - TOUR DU PAYS VOIRONNAIS - 09/09/2023</div>`)[0];
+                popup_613e38c0b862d05053828ad670705b61.setContent(html_fe28b7b1ffd9b198483a66d89773af53);
+            
+        
+
+        marker_e1791eea4d4afc3559261bff8a6e3a11.bindPopup(popup_613e38c0b862d05053828ad670705b61)
+        ;
+
+        
+    
+    
+            var marker_2dbc0169d2c518fb88d89a635def8b0d = L.marker(
+                [45.761867302329925, 5.688311357524672],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_5e4fe274101f46917e4005731799f355 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_2dbc0169d2c518fb88d89a635def8b0d.setIcon(icon_5e4fe274101f46917e4005731799f355);
+        
+    
+        var popup_ff3a9f2b94028665c918a0ee6729b489 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_138f064bc604760536859295b665f282 = $(`<div id="html_138f064bc604760536859295b665f282" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE LA VILLE DE BELLEY - 09/09/2023</div>`)[0];
+                popup_ff3a9f2b94028665c918a0ee6729b489.setContent(html_138f064bc604760536859295b665f282);
+            
+        
+
+        marker_2dbc0169d2c518fb88d89a635def8b0d.bindPopup(popup_ff3a9f2b94028665c918a0ee6729b489)
+        ;
+
+        
+    
+    
+            var marker_7da86a3632023fe56cd788eaf05625f6 = L.marker(
+                [46.04773211713765, 6.217797444529529],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_1313004976ba33c491106f693d5eea3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_7da86a3632023fe56cd788eaf05625f6.setIcon(icon_1313004976ba33c491106f693d5eea3c);
+        
+    
+        var popup_7463a6e285b12d1c8d8e91b9f6796d6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0398f041a0fe378953354a295ed8dae5 = $(`<div id="html_0398f041a0fe378953354a295ed8dae5" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX D'EVIRES - 03/09/2023</div>`)[0];
+                popup_7463a6e285b12d1c8d8e91b9f6796d6d.setContent(html_0398f041a0fe378953354a295ed8dae5);
+            
+        
+
+        marker_7da86a3632023fe56cd788eaf05625f6.bindPopup(popup_7463a6e285b12d1c8d8e91b9f6796d6d)
+        ;
+
+        
+    
+    
+            var marker_47a5e41463c75a6a81dbbdba4fd44d6f = L.marker(
+                [45.86724316969731, 5.943402002400948],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_30cab9566453849e24f122fa5f28b3cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_47a5e41463c75a6a81dbbdba4fd44d6f.setIcon(icon_30cab9566453849e24f122fa5f28b3cc);
+        
+    
+        var popup_abfdccd2e03da39fd5db8f4ba90ba813 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f22e291c6df62e8f805f166cb2782134 = $(`<div id="html_f22e291c6df62e8f805f166cb2782134" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DE LA MUNICIPALITE DE RUMILLY - 27/08/2023</div>`)[0];
+                popup_abfdccd2e03da39fd5db8f4ba90ba813.setContent(html_f22e291c6df62e8f805f166cb2782134);
+            
+        
+
+        marker_47a5e41463c75a6a81dbbdba4fd44d6f.bindPopup(popup_abfdccd2e03da39fd5db8f4ba90ba813)
+        ;
+
+        
+    
+    
+            var marker_f6249848629390d69157da54044dbaea = L.marker(
+                [44.368653649048106, 4.690253876466194],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_0b45b39d1a123d186b725032f91dc00c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_f6249848629390d69157da54044dbaea.setIcon(icon_0b45b39d1a123d186b725032f91dc00c);
+        
+    
+        var popup_efc3650d44d0385128111cd7faedd5fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d71fb35ebfb271c5fed50a6c4b6167e = $(`<div id="html_7d71fb35ebfb271c5fed50a6c4b6167e" style="width: 100.0%; height: 100.0%;">Access hommes - TP RAOUX - 27/08/2023</div>`)[0];
+                popup_efc3650d44d0385128111cd7faedd5fc.setContent(html_7d71fb35ebfb271c5fed50a6c4b6167e);
+            
+        
+
+        marker_f6249848629390d69157da54044dbaea.bindPopup(popup_efc3650d44d0385128111cd7faedd5fc)
+        ;
+
+        
+    
+    
+            var marker_59a98001732e8c9df39962bb092c98c2 = L.marker(
+                [45.52714483984734, 5.110313526873254],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_82228e14b900ac29f449f252445ab3c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_59a98001732e8c9df39962bb092c98c2.setIcon(icon_82228e14b900ac29f449f252445ab3c9);
+        
+    
+        var popup_911c17849b68be7298855ed31b86b8b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e2a2e92ab067877b107eebd6e8b1612 = $(`<div id="html_6e2a2e92ab067877b107eebd6e8b1612" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE CHARANTONNAY - 27/08/2023</div>`)[0];
+                popup_911c17849b68be7298855ed31b86b8b3.setContent(html_6e2a2e92ab067877b107eebd6e8b1612);
+            
+        
+
+        marker_59a98001732e8c9df39962bb092c98c2.bindPopup(popup_911c17849b68be7298855ed31b86b8b3)
+        ;
+
+        
+    
+    
+            var marker_1f6e202cc2b55d2e4b63763d86898013 = L.marker(
+                [46.42402722368308, 4.985406333564175],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_a392bfc62e2e1655c9c265696cd02900 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_1f6e202cc2b55d2e4b63763d86898013.setIcon(icon_a392bfc62e2e1655c9c265696cd02900);
+        
+    
+        var popup_3dc7a0a2375709ead36db778c616fa62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_376a4222000a5d6e18d7a01d2b9fad1e = $(`<div id="html_376a4222000a5d6e18d7a01d2b9fad1e" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DE CHAVANNES SUR REYSSOUZE - 27/08/2023</div>`)[0];
+                popup_3dc7a0a2375709ead36db778c616fa62.setContent(html_376a4222000a5d6e18d7a01d2b9fad1e);
+            
+        
+
+        marker_1f6e202cc2b55d2e4b63763d86898013.bindPopup(popup_3dc7a0a2375709ead36db778c616fa62)
+        ;
+
+        
+    
+    
+            var marker_835b2b0a01bfdd9f945468ae297157f3 = L.marker(
+                [45.708603526304486, 4.069657903101137],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_08948329b7fdd5ed4b35ca6ed44d8988 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_835b2b0a01bfdd9f945468ae297157f3.setIcon(icon_08948329b7fdd5ed4b35ca6ed44d8988);
+        
+    
+        var popup_ff851c2e37bcbe275cfedde11c0552ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a955c356d9568edc12e7a254671157d6 = $(`<div id="html_a955c356d9568edc12e7a254671157d6" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DU PIC - 21/08/2023</div>`)[0];
+                popup_ff851c2e37bcbe275cfedde11c0552ca.setContent(html_a955c356d9568edc12e7a254671157d6);
+            
+        
+
+        marker_835b2b0a01bfdd9f945468ae297157f3.bindPopup(popup_ff851c2e37bcbe275cfedde11c0552ca)
+        ;
+
+        
+    
+    
+            var marker_9a9141b6ec1b052accc5a82ed70f6176 = L.marker(
+                [45.66624094313536, 3.937348226202648],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_66485a24039d39f153220c1584bb0425 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_9a9141b6ec1b052accc5a82ed70f6176.setIcon(icon_66485a24039d39f153220c1584bb0425);
+        
+    
+        var popup_258f826e5112a84dfeb9535367a85787 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88e3c4a2f7ca04cda1af4d446dd78f53 = $(`<div id="html_88e3c4a2f7ca04cda1af4d446dd78f53" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE LA SAINT BARTHELEMY - 20/08/2023</div>`)[0];
+                popup_258f826e5112a84dfeb9535367a85787.setContent(html_88e3c4a2f7ca04cda1af4d446dd78f53);
+            
+        
+
+        marker_9a9141b6ec1b052accc5a82ed70f6176.bindPopup(popup_258f826e5112a84dfeb9535367a85787)
+        ;
+
+        
+    
+    
+            var marker_d5053781b65efc962519492d31748d5c = L.marker(
+                [46.30102226584476, 5.67835133584162],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_b6ebd3b3f4c02130e8fc13e00059a580 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_d5053781b65efc962519492d31748d5c.setIcon(icon_b6ebd3b3f4c02130e8fc13e00059a580);
+        
+    
+        var popup_c17d323d53e3407abb79bb75aff427c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c4d3d0ebc9e6fd5ec2d57b4b3234841 = $(`<div id="html_3c4d3d0ebc9e6fd5ec2d57b4b3234841" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DE LA VILLE D ARBENT - 20/08/2023</div>`)[0];
+                popup_c17d323d53e3407abb79bb75aff427c9.setContent(html_3c4d3d0ebc9e6fd5ec2d57b4b3234841);
+            
+        
+
+        marker_d5053781b65efc962519492d31748d5c.bindPopup(popup_c17d323d53e3407abb79bb75aff427c9)
+        ;
+
+        
+    
+    
+            var marker_99760fd9154350d52343b3d0c8b4bad5 = L.marker(
+                [45.64263575632247, 4.235854358560894],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_047089c00d8ef55f52311ec941b2df04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_99760fd9154350d52343b3d0c8b4bad5.setIcon(icon_047089c00d8ef55f52311ec941b2df04);
+        
+    
+        var popup_6c7a9d27e3679fb482f5e638ff96481e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9825156a92b68e159a2716bd6ef09730 = $(`<div id="html_9825156a92b68e159a2716bd6ef09730" style="width: 100.0%; height: 100.0%;">Access hommes - PROLOGUE ACCESS AU CRITERIUM DE MONTROND LES BAINS - 19/08/2023</div>`)[0];
+                popup_6c7a9d27e3679fb482f5e638ff96481e.setContent(html_9825156a92b68e159a2716bd6ef09730);
+            
+        
+
+        marker_99760fd9154350d52343b3d0c8b4bad5.bindPopup(popup_6c7a9d27e3679fb482f5e638ff96481e)
+        ;
+
+        
+    
+    
+            var marker_eee72d41702cb75e67b82619adc34263 = L.marker(
+                [46.4422917453786, 5.241375414816832],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_7153f5c764fba19cd75b95a5fa511f29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_eee72d41702cb75e67b82619adc34263.setIcon(icon_7153f5c764fba19cd75b95a5fa511f29);
+        
+    
+        var popup_74eb240869cda1c8728106a3477edd7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b9c7e1c817d024e5ce4b5fe91a66401 = $(`<div id="html_3b9c7e1c817d024e5ce4b5fe91a66401" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DE CORMOZ - 15/08/2023</div>`)[0];
+                popup_74eb240869cda1c8728106a3477edd7b.setContent(html_3b9c7e1c817d024e5ce4b5fe91a66401);
+            
+        
+
+        marker_eee72d41702cb75e67b82619adc34263.bindPopup(popup_74eb240869cda1c8728106a3477edd7b)
+        ;
+
+        
+    
+    
+            var marker_ddc2875556b2d933a73fa37360a54bac = L.marker(
+                [46.18880388967837, 5.375389923441336],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_21b62c23e18974b6b9df9caef2c0e47e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_ddc2875556b2d933a73fa37360a54bac.setIcon(icon_21b62c23e18974b6b9df9caef2c0e47e);
+        
+    
+        var popup_3c6e5319619dd4bd726f6bbe4a6a6610 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dba7a692035a15d52a66fab82be01fbe = $(`<div id="html_dba7a692035a15d52a66fab82be01fbe" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX CYCLISTE DE VILLEREVERSURE - 05/08/2023</div>`)[0];
+                popup_3c6e5319619dd4bd726f6bbe4a6a6610.setContent(html_dba7a692035a15d52a66fab82be01fbe);
+            
+        
+
+        marker_ddc2875556b2d933a73fa37360a54bac.bindPopup(popup_3c6e5319619dd4bd726f6bbe4a6a6610)
+        ;
+
+        
+    
+    
+            var marker_e2d2ef627ba6cf8030a93c5d06839229 = L.marker(
+                [45.11204999657582, 3.8465402595579374],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_7df7d15f7e1bc8a628e7db4922a95b45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_e2d2ef627ba6cf8030a93c5d06839229.setIcon(icon_7df7d15f7e1bc8a628e7db4922a95b45);
+        
+    
+        var popup_2c49dbec227a178accea98216af3c388 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2ff8e9bac4a1ed14e447b71a795fd4c = $(`<div id="html_f2ff8e9bac4a1ed14e447b71a795fd4c" style="width: 100.0%; height: 100.0%;">Access hommes - LES HAUTS DU RUESSIUM - 23/07/2023</div>`)[0];
+                popup_2c49dbec227a178accea98216af3c388.setContent(html_f2ff8e9bac4a1ed14e447b71a795fd4c);
+            
+        
+
+        marker_e2d2ef627ba6cf8030a93c5d06839229.bindPopup(popup_2c49dbec227a178accea98216af3c388)
+        ;
+
+        
+    
+    
+            var marker_1aa47644f85a18f850cced45f8928940 = L.marker(
+                [46.21183916229002, 5.188951062820048],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_845e53c30ec7707fff7f18ecf59d2d06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_1aa47644f85a18f850cced45f8928940.setIcon(icon_845e53c30ec7707fff7f18ecf59d2d06);
+        
+    
+        var popup_d4b1109fd26c061a9f458c91e1b7e4e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_333f48dd1b51ff3fdab9a29456d72b7a = $(`<div id="html_333f48dd1b51ff3fdab9a29456d72b7a" style="width: 100.0%; height: 100.0%;">Access hommes - COURSE CYCLISAINTE DE SAINT DENIS LES BOURG - 23/07/2023</div>`)[0];
+                popup_d4b1109fd26c061a9f458c91e1b7e4e4.setContent(html_333f48dd1b51ff3fdab9a29456d72b7a);
+            
+        
+
+        marker_1aa47644f85a18f850cced45f8928940.bindPopup(popup_d4b1109fd26c061a9f458c91e1b7e4e4)
+        ;
+
+        
+    
+    
+            var marker_df4bdd8001304712421678f622920616 = L.marker(
+                [46.417157288387585, 5.299932386987146],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_091aae70e1e10b4a8e9483a9a014efaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_df4bdd8001304712421678f622920616.setIcon(icon_091aae70e1e10b4a8e9483a9a014efaa);
+        
+    
+        var popup_5df7bc7be6692496b1393d956db89139 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65e33b78cebd1a51a8f22f6891dca756 = $(`<div id="html_65e33b78cebd1a51a8f22f6891dca756" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DE DOMSURE - 16/07/2023</div>`)[0];
+                popup_5df7bc7be6692496b1393d956db89139.setContent(html_65e33b78cebd1a51a8f22f6891dca756);
+            
+        
+
+        marker_df4bdd8001304712421678f622920616.bindPopup(popup_5df7bc7be6692496b1393d956db89139)
+        ;
+
+        
+    
+    
+            var marker_8c769d76afca36aea4324b48704a19a9 = L.marker(
+                [44.93561903008028, 4.000952750418616],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_b75475e32b1260b54a31c7889d05f188 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_8c769d76afca36aea4324b48704a19a9.setIcon(icon_b75475e32b1260b54a31c7889d05f188);
+        
+    
+        var popup_49f381ba5a5320c87db834f9d69c9a91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e42524e567523802d13ba38ae4b28c4 = $(`<div id="html_8e42524e567523802d13ba38ae4b28c4" style="width: 100.0%; height: 100.0%;">Access hommes - PROLOGUE GRAND PRIX DU MONASTIER SUR GAZEILLE - 02/07/2023</div>`)[0];
+                popup_49f381ba5a5320c87db834f9d69c9a91.setContent(html_8e42524e567523802d13ba38ae4b28c4);
+            
+        
+
+        marker_8c769d76afca36aea4324b48704a19a9.bindPopup(popup_49f381ba5a5320c87db834f9d69c9a91)
+        ;
+
+        
+    
+    
+            var marker_f8642ef161b84b0a55724c7b180db124 = L.marker(
+                [44.38329520251716, 4.706794008412021],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_196bb122c5ea8da47b55abe6a3877ce1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_f8642ef161b84b0a55724c7b180db124.setIcon(icon_196bb122c5ea8da47b55abe6a3877ce1);
+        
+    
+        var popup_66ffbcc115b6ef64ae892a70bde075e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e7ccc014ce8afbc4337875b2bf2df5a = $(`<div id="html_7e7ccc014ce8afbc4337875b2bf2df5a" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE LA MUNICIPALITÉ  - 02/07/2023</div>`)[0];
+                popup_66ffbcc115b6ef64ae892a70bde075e2.setContent(html_7e7ccc014ce8afbc4337875b2bf2df5a);
+            
+        
+
+        marker_f8642ef161b84b0a55724c7b180db124.bindPopup(popup_66ffbcc115b6ef64ae892a70bde075e2)
+        ;
+
+        
+    
+    
+            var marker_6b442612f5157c8831a90cf2fc9c7195 = L.marker(
+                [46.181862778092736, 5.5378869591067525],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_e9e28c21a713f5d6117b1a8a63c7ec3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_6b442612f5157c8831a90cf2fc9c7195.setIcon(icon_e9e28c21a713f5d6117b1a8a63c7ec3f);
+        
+    
+        var popup_9fa8beb2f1bf94e4fe3cf32ad7e2ba51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd41d462b4a56aeb00efe430f84befe1 = $(`<div id="html_fd41d462b4a56aeb00efe430f84befe1" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DE MORNAY - 24/06/2023</div>`)[0];
+                popup_9fa8beb2f1bf94e4fe3cf32ad7e2ba51.setContent(html_fd41d462b4a56aeb00efe430f84befe1);
+            
+        
+
+        marker_6b442612f5157c8831a90cf2fc9c7195.bindPopup(popup_9fa8beb2f1bf94e4fe3cf32ad7e2ba51)
+        ;
+
+        
+    
+    
+            var marker_33d4a949945754c6479cdf0083fa495b = L.marker(
+                [45.58488693683264, 5.491742178248465],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_3f616bfd7f335bf6c4d9caaba94ab903 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_33d4a949945754c6479cdf0083fa495b.setIcon(icon_3f616bfd7f335bf6c4d9caaba94ab903);
+        
+    
+        var popup_1893bd1471ea31b0e79374b6917623d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e80c547ab446d3d2f122dd0aa3b2dbc7 = $(`<div id="html_e80c547ab446d3d2f122dd0aa3b2dbc7" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE ST CLAIR DE LA TOUR - 18/06/2023</div>`)[0];
+                popup_1893bd1471ea31b0e79374b6917623d6.setContent(html_e80c547ab446d3d2f122dd0aa3b2dbc7);
+            
+        
+
+        marker_33d4a949945754c6479cdf0083fa495b.bindPopup(popup_1893bd1471ea31b0e79374b6917623d6)
+        ;
+
+        
+    
+    
+            var marker_a120f33890bf444b358d57f8bfda74fa = L.marker(
+                [46.04961790001327, 4.038446285976772],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_caf37dda9fb460193c9635138cee729f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_a120f33890bf444b358d57f8bfda74fa.setIcon(icon_caf37dda9fb460193c9635138cee729f);
+        
+    
+        var popup_77ec782b1aab9ad31d58d62e391440d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91d16eac134f5a7821f05c189345fe42 = $(`<div id="html_91d16eac134f5a7821f05c189345fe42" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE LA VILLE DE RIORGES OPEN 3 + ACCESS - 18/06/2023</div>`)[0];
+                popup_77ec782b1aab9ad31d58d62e391440d0.setContent(html_91d16eac134f5a7821f05c189345fe42);
+            
+        
+
+        marker_a120f33890bf444b358d57f8bfda74fa.bindPopup(popup_77ec782b1aab9ad31d58d62e391440d0)
+        ;
+
+        
+    
+    
+            var marker_10d5f38009e13705c947b3ed8424caaa = L.marker(
+                [46.031643541254574, 5.525481501136107],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_d6366d4483b0541432fba01ee26e3995 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_10d5f38009e13705c947b3ed8424caaa.setIcon(icon_d6366d4483b0541432fba01ee26e3995);
+        
+    
+        var popup_2d6fbc34653493e7d9003bd84b920262 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9bad1d4ab39c7ea0ee0fdccf18f5146 = $(`<div id="html_d9bad1d4ab39c7ea0ee0fdccf18f5146" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DES 4  COMMUNES DE LA COMBE DU VAL - 18/06/2023</div>`)[0];
+                popup_2d6fbc34653493e7d9003bd84b920262.setContent(html_d9bad1d4ab39c7ea0ee0fdccf18f5146);
+            
+        
+
+        marker_10d5f38009e13705c947b3ed8424caaa.bindPopup(popup_2d6fbc34653493e7d9003bd84b920262)
+        ;
+
+        
+    
+    
+            var marker_22595121123df3576625443e96b50e65 = L.marker(
+                [46.10773919604624, 6.079731440388129],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_ff58b38d2bf60655aa04f6767b10f844 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_22595121123df3576625443e96b50e65.setIcon(icon_ff58b38d2bf60655aa04f6767b10f844);
+        
+    
+        var popup_5e6f6c454f749dabb4d70f5c2deea54f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9ec927cd2051c70760ca34b13857d86 = $(`<div id="html_d9ec927cd2051c70760ca34b13857d86" style="width: 100.0%; height: 100.0%;">Access hommes - 47ÈME PRIX DE FEIGERES - 11/06/2023</div>`)[0];
+                popup_5e6f6c454f749dabb4d70f5c2deea54f.setContent(html_d9ec927cd2051c70760ca34b13857d86);
+            
+        
+
+        marker_22595121123df3576625443e96b50e65.bindPopup(popup_5e6f6c454f749dabb4d70f5c2deea54f)
+        ;
+
+        
+    
+    
+            var marker_c6e32cb056365fb7cbbe699960212d40 = L.marker(
+                [45.54532061528653, 5.569333384356113],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_c9656a5c1a11e5056a997c6e98db0b10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_c6e32cb056365fb7cbbe699960212d40.setIcon(icon_c9656a5c1a11e5056a997c6e98db0b10);
+        
+    
+        var popup_13b076d33d718fee8e704153f45bedfe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2275c3a1ad518aa14e81658a782d2c9 = $(`<div id="html_e2275c3a1ad518aa14e81658a782d2c9" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX CYCLISTE ROUTE SCA - 11/06/2023</div>`)[0];
+                popup_13b076d33d718fee8e704153f45bedfe.setContent(html_e2275c3a1ad518aa14e81658a782d2c9);
+            
+        
+
+        marker_c6e32cb056365fb7cbbe699960212d40.bindPopup(popup_13b076d33d718fee8e704153f45bedfe)
+        ;
+
+        
+    
+    
+            var marker_08698e80826a13e2a44589b511ab24c5 = L.marker(
+                [46.02506038559902, 4.070920736363692],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_13551a05bd70e764268a952635b80128 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_08698e80826a13e2a44589b511ab24c5.setIcon(icon_13551a05bd70e764268a952635b80128);
+        
+    
+        var popup_6d1127f860fb3335f36f2e551c9be925 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b797d8ed4c140d8fb28d0552bf32d63f = $(`<div id="html_b797d8ed4c140d8fb28d0552bf32d63f" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE LA VILLE DE ROANNE OPEN 3 + ACCESS - 10/06/2023</div>`)[0];
+                popup_6d1127f860fb3335f36f2e551c9be925.setContent(html_b797d8ed4c140d8fb28d0552bf32d63f);
+            
+        
+
+        marker_08698e80826a13e2a44589b511ab24c5.bindPopup(popup_6d1127f860fb3335f36f2e551c9be925)
+        ;
+
+        
+    
+    
+            var marker_c927e57af855c8ae8acf3109d19dd05e = L.marker(
+                [45.84345195548393, 5.77486761256073],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_6644428c8987d11d5a5d2b1ef330e780 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_c927e57af855c8ae8acf3109d19dd05e.setIcon(icon_6644428c8987d11d5a5d2b1ef330e780);
+        
+    
+        var popup_aef568bfd0fb0c5cd43f61c74e92bc28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_081bb874c6c99d4eea1ca12eb32d1765 = $(`<div id="html_081bb874c6c99d4eea1ca12eb32d1765" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX JEAN PIERRE FALCONNIER - 04/06/2023</div>`)[0];
+                popup_aef568bfd0fb0c5cd43f61c74e92bc28.setContent(html_081bb874c6c99d4eea1ca12eb32d1765);
+            
+        
+
+        marker_c927e57af855c8ae8acf3109d19dd05e.bindPopup(popup_aef568bfd0fb0c5cd43f61c74e92bc28)
+        ;
+
+        
+    
+    
+            var marker_c3e351049341a2a2394bf6b70e67d6c3 = L.marker(
+                [45.178445776331294, 5.700622040565487],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_3e86c920688a2a80457fff82fa5cf60a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_c3e351049341a2a2394bf6b70e67d6c3.setIcon(icon_3e86c920688a2a80457fff82fa5cf60a);
+        
+    
+        var popup_f96f7641ad3f6f78c8b43a6e370c0b83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d28d6b4e824feb358f963fc9c01faa5 = $(`<div id="html_3d28d6b4e824feb358f963fc9c01faa5" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE SEYSSINET - SOUVENIR JEAN JACQUES ERRICO - 04/06/2023</div>`)[0];
+                popup_f96f7641ad3f6f78c8b43a6e370c0b83.setContent(html_3d28d6b4e824feb358f963fc9c01faa5);
+            
+        
+
+        marker_c3e351049341a2a2394bf6b70e67d6c3.bindPopup(popup_f96f7641ad3f6f78c8b43a6e370c0b83)
+        ;
+
+        
+    
+    
+            var marker_24c948f26ad9a090bbc13c73cb353026 = L.marker(
+                [46.24081032870479, 4.9874755430957585],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_6b43a163230f97c44b0c2eac4fd022e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_24c948f26ad9a090bbc13c73cb353026.setIcon(icon_6b43a163230f97c44b0c2eac4fd022e1);
+        
+    
+        var popup_721074215bc1b47eb4031ccf2d3b2c81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6398293e6776f6bc14e71aaf791cca1 = $(`<div id="html_a6398293e6776f6bc14e71aaf791cca1" style="width: 100.0%; height: 100.0%;">Access hommes - SOUVENIR J LUC FELIX PRIX DE PERREX - 03/06/2023</div>`)[0];
+                popup_721074215bc1b47eb4031ccf2d3b2c81.setContent(html_a6398293e6776f6bc14e71aaf791cca1);
+            
+        
+
+        marker_24c948f26ad9a090bbc13c73cb353026.bindPopup(popup_721074215bc1b47eb4031ccf2d3b2c81)
+        ;
+
+        
+    
+    
+            var marker_93a9c0d1e1572430133cc8e24a751aab = L.marker(
+                [45.19399545104872, 3.706038644203803],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_8a27b61a7a54357130e77e0bdf224a0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_93a9c0d1e1572430133cc8e24a751aab.setIcon(icon_8a27b61a7a54357130e77e0bdf224a0a);
+        
+    
+        var popup_454176c75518464820c5499db0e43cbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b8882a44aff03d2b10efc724dc65d49 = $(`<div id="html_6b8882a44aff03d2b10efc724dc65d49" style="width: 100.0%; height: 100.0%;">Access hommes - PROLOGUE GRAND PRIX D ALLEGRE - 29/05/2023</div>`)[0];
+                popup_454176c75518464820c5499db0e43cbe.setContent(html_6b8882a44aff03d2b10efc724dc65d49);
+            
+        
+
+        marker_93a9c0d1e1572430133cc8e24a751aab.bindPopup(popup_454176c75518464820c5499db0e43cbe)
+        ;
+
+        
+    
+    
+            var marker_135c1a73381fe42ba93664b9552af1a1 = L.marker(
+                [45.57704661817848, 5.4918282833757655],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_77d86ad0969ab939968ced2067f4f74c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_135c1a73381fe42ba93664b9552af1a1.setIcon(icon_77d86ad0969ab939968ced2067f4f74c);
+        
+    
+        var popup_0b87564fcf165f944329eec9484498b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99eefd3541e91054c3b1a0f943757083 = $(`<div id="html_99eefd3541e91054c3b1a0f943757083" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE SAINT CLAIR DE LA TOUR - 28/05/2023</div>`)[0];
+                popup_0b87564fcf165f944329eec9484498b4.setContent(html_99eefd3541e91054c3b1a0f943757083);
+            
+        
+
+        marker_135c1a73381fe42ba93664b9552af1a1.bindPopup(popup_0b87564fcf165f944329eec9484498b4)
+        ;
+
+        
+    
+    
+            var marker_c8f9d4a94f0fcf69cba51ababb56cb7a = L.marker(
+                [45.83530643324663, 3.025229075430145],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_7acd1595867016ee9dcea2407bf2ab87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_c8f9d4a94f0fcf69cba51ababb56cb7a.setIcon(icon_7acd1595867016ee9dcea2407bf2ab87);
+        
+    
+        var popup_2d486186fbc3b51ef2bdadc29baf2828 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f9bb6d3369aed72173cfbd8f53c34d5 = $(`<div id="html_7f9bb6d3369aed72173cfbd8f53c34d5" style="width: 100.0%; height: 100.0%;">Access hommes - PROLOGUE DURTORCCHA - 27/05/2023</div>`)[0];
+                popup_2d486186fbc3b51ef2bdadc29baf2828.setContent(html_7f9bb6d3369aed72173cfbd8f53c34d5);
+            
+        
+
+        marker_c8f9d4a94f0fcf69cba51ababb56cb7a.bindPopup(popup_2d486186fbc3b51ef2bdadc29baf2828)
+        ;
+
+        
+    
+    
+            var marker_10eff786b02edf76824f4bb87d0d1979 = L.marker(
+                [46.21127926905376, 5.074522054829558],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_26fae076f7c1a49d52a19cb9f3d05204 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_10eff786b02edf76824f4bb87d0d1979.setIcon(icon_26fae076f7c1a49d52a19cb9f3d05204);
+        
+    
+        var popup_8d0368ef6f9211eee3251b8e4bc6f353 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa331e57c50fdbc1ff474d6573b015d0 = $(`<div id="html_aa331e57c50fdbc1ff474d6573b015d0" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX CYCLISTE DE VANDEINS - 21/05/2023</div>`)[0];
+                popup_8d0368ef6f9211eee3251b8e4bc6f353.setContent(html_aa331e57c50fdbc1ff474d6573b015d0);
+            
+        
+
+        marker_10eff786b02edf76824f4bb87d0d1979.bindPopup(popup_8d0368ef6f9211eee3251b8e4bc6f353)
+        ;
+
+        
+    
+    
+            var marker_04b42dd1bcc27045f6ba5596a426d3dc = L.marker(
+                [45.606224303596655, 5.881082394418568],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_0d6b7378b6afbd1c8a0fb2b4d9a55bc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_04b42dd1bcc27045f6ba5596a426d3dc.setIcon(icon_0d6b7378b6afbd1c8a0fb2b4d9a55bc4);
+        
+    
+        var popup_d1abf9664fd73022b5e851f525564713 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_023151c13842012286018ea86fd0d60a = $(`<div id="html_023151c13842012286018ea86fd0d60a" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX ACS KONICA MINOLTA - 21/05/2023</div>`)[0];
+                popup_d1abf9664fd73022b5e851f525564713.setContent(html_023151c13842012286018ea86fd0d60a);
+            
+        
+
+        marker_04b42dd1bcc27045f6ba5596a426d3dc.bindPopup(popup_d1abf9664fd73022b5e851f525564713)
+        ;
+
+        
+    
+    
+            var marker_45b9492d3b5817b7e5de093c3ed8e4fe = L.marker(
+                [45.6661734664936, 4.910286123514615],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_12e22b22421718e09ba040ff0bf5a05f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_45b9492d3b5817b7e5de093c3ed8e4fe.setIcon(icon_12e22b22421718e09ba040ff0bf5a05f);
+        
+    
+        var popup_1fa0d301403d7d892b8d14b6333979a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72552f1ee4e644731274aab0ae7e5b59 = $(`<div id="html_72552f1ee4e644731274aab0ae7e5b59" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE LA VILLE DE CORBAS - 20/05/2023</div>`)[0];
+                popup_1fa0d301403d7d892b8d14b6333979a2.setContent(html_72552f1ee4e644731274aab0ae7e5b59);
+            
+        
+
+        marker_45b9492d3b5817b7e5de093c3ed8e4fe.bindPopup(popup_1fa0d301403d7d892b8d14b6333979a2)
+        ;
+
+        
+    
+    
+            var marker_2eabce5699f72034048a451fae340b07 = L.marker(
+                [44.94990291836687, 4.899482458643714],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_263639d3bb6642b94e4bba6d024821a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_2eabce5699f72034048a451fae340b07.setIcon(icon_263639d3bb6642b94e4bba6d024821a0);
+        
+    
+        var popup_0e5055be9ae06d157cdfe337045a6bef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b91030967cf53a355848de7670579b6f = $(`<div id="html_b91030967cf53a355848de7670579b6f" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE LA MUNICIPALITE - 14/05/2023</div>`)[0];
+                popup_0e5055be9ae06d157cdfe337045a6bef.setContent(html_b91030967cf53a355848de7670579b6f);
+            
+        
+
+        marker_2eabce5699f72034048a451fae340b07.bindPopup(popup_0e5055be9ae06d157cdfe337045a6bef)
+        ;
+
+        
+    
+    
+            var marker_556a30ad4465a5a3a111eac39998dea5 = L.marker(
+                [45.39011403978186, 5.495229049942797],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_4a49b3f1b8a0e33e2f6eb58ac4a3b515 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_556a30ad4465a5a3a111eac39998dea5.setIcon(icon_4a49b3f1b8a0e33e2f6eb58ac4a3b515);
+        
+    
+        var popup_e8d7d7fd0a25861b43f2c24d1bc4d428 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77dcc9f0f249dded64049ab9236e03bc = $(`<div id="html_77dcc9f0f249dded64049ab9236e03bc" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE LA VILLE D APPRIEU - 13/05/2023</div>`)[0];
+                popup_e8d7d7fd0a25861b43f2c24d1bc4d428.setContent(html_77dcc9f0f249dded64049ab9236e03bc);
+            
+        
+
+        marker_556a30ad4465a5a3a111eac39998dea5.bindPopup(popup_e8d7d7fd0a25861b43f2c24d1bc4d428)
+        ;
+
+        
+    
+    
+            var marker_a611a2beac136f0feeb5c1a5fb11e328 = L.marker(
+                [46.20061868278663, 5.231765793358844],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_42bb2e8ded02fc1cf6922ac668eded33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_a611a2beac136f0feeb5c1a5fb11e328.setIcon(icon_42bb2e8ded02fc1cf6922ac668eded33);
+        
+    
+        var popup_025af35f27dc28c96a481939193f8dba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b80e9ea98c22405e28089df55ebca4f = $(`<div id="html_4b80e9ea98c22405e28089df55ebca4f" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DE VARENNES SAINT SAUVEUR - 13/05/2023</div>`)[0];
+                popup_025af35f27dc28c96a481939193f8dba.setContent(html_4b80e9ea98c22405e28089df55ebca4f);
+            
+        
+
+        marker_a611a2beac136f0feeb5c1a5fb11e328.bindPopup(popup_025af35f27dc28c96a481939193f8dba)
+        ;
+
+        
+    
+    
+            var marker_8d27d2bca4f711a3028988638e30d87d = L.marker(
+                [45.5353497740584, 6.452724698850141],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_510e3138ba36a332e86fdfbdbf431692 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_8d27d2bca4f711a3028988638e30d87d.setIcon(icon_510e3138ba36a332e86fdfbdbf431692);
+        
+    
+        var popup_1bd55f9001aed078a507080a3f14e484 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ded60a1298bf653f8e2018a868f2255 = $(`<div id="html_9ded60a1298bf653f8e2018a868f2255" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX LEO THOMAS - 08/05/2023</div>`)[0];
+                popup_1bd55f9001aed078a507080a3f14e484.setContent(html_9ded60a1298bf653f8e2018a868f2255);
+            
+        
+
+        marker_8d27d2bca4f711a3028988638e30d87d.bindPopup(popup_1bd55f9001aed078a507080a3f14e484)
+        ;
+
+        
+    
+    
+            var marker_76fa3ce46d070dc25b9a94d0cd8e8bf4 = L.marker(
+                [45.00738488887152, 4.853677067714161],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_b6fc5c142fdd3389371ecd3e1d9175a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_76fa3ce46d070dc25b9a94d0cd8e8bf4.setIcon(icon_b6fc5c142fdd3389371ecd3e1d9175a7);
+        
+    
+        var popup_6216d7fe0873f20e42b19b4999aeb8da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfa1b5d1035ce765f0df59d4df69c6c1 = $(`<div id="html_bfa1b5d1035ce765f0df59d4df69c6c1" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE LA ROCHE - 07/05/2023</div>`)[0];
+                popup_6216d7fe0873f20e42b19b4999aeb8da.setContent(html_bfa1b5d1035ce765f0df59d4df69c6c1);
+            
+        
+
+        marker_76fa3ce46d070dc25b9a94d0cd8e8bf4.bindPopup(popup_6216d7fe0873f20e42b19b4999aeb8da)
+        ;
+
+        
+    
+    
+            var marker_006817caaa71882c22ef14437ab604a1 = L.marker(
+                [45.7598177829311, 5.6817889915784265],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_fd4c0044c9dd04941b103baf3663ef83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_006817caaa71882c22ef14437ab604a1.setIcon(icon_fd4c0044c9dd04941b103baf3663ef83);
+        
+    
+        var popup_6cd8baf5f62341cec796701c8445af50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_048d3dd03f4614590963ab1d7ee5e2d8 = $(`<div id="html_048d3dd03f4614590963ab1d7ee5e2d8" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DES INDUSTRIES DE BELLEY - 07/05/2023</div>`)[0];
+                popup_6cd8baf5f62341cec796701c8445af50.setContent(html_048d3dd03f4614590963ab1d7ee5e2d8);
+            
+        
+
+        marker_006817caaa71882c22ef14437ab604a1.bindPopup(popup_6cd8baf5f62341cec796701c8445af50)
+        ;
+
+        
+    
+    
+            var marker_4dec22fdc871c0c3194d7c7bf1b9cf0c = L.marker(
+                [45.8845305338834, 6.055197981565147],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_8afdd2353ff572e6af8a17f45efb4064 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_4dec22fdc871c0c3194d7c7bf1b9cf0c.setIcon(icon_8afdd2353ff572e6af8a17f45efb4064);
+        
+    
+        var popup_2814554286ad55196c9dcc432a5c9c4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37ac48c703dcac1ff3b21a3fe7606b39 = $(`<div id="html_37ac48c703dcac1ff3b21a3fe7606b39" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE CHAVANOD - 01/05/2023</div>`)[0];
+                popup_2814554286ad55196c9dcc432a5c9c4b.setContent(html_37ac48c703dcac1ff3b21a3fe7606b39);
+            
+        
+
+        marker_4dec22fdc871c0c3194d7c7bf1b9cf0c.bindPopup(popup_2814554286ad55196c9dcc432a5c9c4b)
+        ;
+
+        
+    
+    
+            var marker_3e84d5ecf00f5243dabd3223187a8cbf = L.marker(
+                [45.1962092796548, 5.6910526990267565],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_781a7c83a4bbb308283dbec113d72733 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_3e84d5ecf00f5243dabd3223187a8cbf.setIcon(icon_781a7c83a4bbb308283dbec113d72733);
+        
+    
+        var popup_f6a69c02f67dcff842452910435a4261 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b8b70d8a38b2bcb650989a233b608b7 = $(`<div id="html_4b8b70d8a38b2bcb650989a233b608b7" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE LA VILLE DE FONTAINE - 01/05/2023</div>`)[0];
+                popup_f6a69c02f67dcff842452910435a4261.setContent(html_4b8b70d8a38b2bcb650989a233b608b7);
+            
+        
+
+        marker_3e84d5ecf00f5243dabd3223187a8cbf.bindPopup(popup_f6a69c02f67dcff842452910435a4261)
+        ;
+
+        
+    
+    
+            var marker_831719ce4660755a0545693c180e2a50 = L.marker(
+                [46.06661141384961, 6.548944162572861],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_bf9f073ba75caf64572ee0e6856cfd7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_831719ce4660755a0545693c180e2a50.setIcon(icon_bf9f073ba75caf64572ee0e6856cfd7f);
+        
+    
+        var popup_ca50e9e766f7a0ef266df6610ff991f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cf90bd338b5a0c835a2413658eac60e = $(`<div id="html_5cf90bd338b5a0c835a2413658eac60e" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DU PRINTEMPS - 23/04/2023</div>`)[0];
+                popup_ca50e9e766f7a0ef266df6610ff991f0.setContent(html_5cf90bd338b5a0c835a2413658eac60e);
+            
+        
+
+        marker_831719ce4660755a0545693c180e2a50.bindPopup(popup_ca50e9e766f7a0ef266df6610ff991f0)
+        ;
+
+        
+    
+    
+            var marker_4bb3410849e8d1f8f9e7b8800c22a77d = L.marker(
+                [45.9316265695325, 6.1767725186218625],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_6ac2f4dfe12ff7575f32175ac376a869 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_4bb3410849e8d1f8f9e7b8800c22a77d.setIcon(icon_6ac2f4dfe12ff7575f32175ac376a869);
+        
+    
+        var popup_8d62c9262e9068884811d5e024ba4637 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52a535d867fa879537bace94750c8be3 = $(`<div id="html_52a535d867fa879537bace94750c8be3" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DES GLAISINS - 16/04/2023</div>`)[0];
+                popup_8d62c9262e9068884811d5e024ba4637.setContent(html_52a535d867fa879537bace94750c8be3);
+            
+        
+
+        marker_4bb3410849e8d1f8f9e7b8800c22a77d.bindPopup(popup_8d62c9262e9068884811d5e024ba4637)
+        ;
+
+        
+    
+    
+            var marker_535f176b80b2072e39b6fd80b7000924 = L.marker(
+                [45.98883338249298, 5.270543864028711],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_57f50904912d8b308def38ee5e0db4ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_535f176b80b2072e39b6fd80b7000924.setIcon(icon_57f50904912d8b308def38ee5e0db4ac);
+        
+    
+        var popup_2e1f88a8b645e01457fe56bbb2edf6fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1649bb31bdbd50ca296a1253f50b093 = $(`<div id="html_f1649bb31bdbd50ca296a1253f50b093" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX CYCLISTE SOUVENIR JEAN CLAPISSON - 10/04/2023</div>`)[0];
+                popup_2e1f88a8b645e01457fe56bbb2edf6fa.setContent(html_f1649bb31bdbd50ca296a1253f50b093);
+            
+        
+
+        marker_535f176b80b2072e39b6fd80b7000924.bindPopup(popup_2e1f88a8b645e01457fe56bbb2edf6fa)
+        ;
+
+        
+    
+    
+            var marker_033ad4501c9358b6d93d3a16dcd0782c = L.marker(
+                [46.08249410591531, 5.377414170195055],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_93c04b646829bfa17c418c356d2ace50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_033ad4501c9358b6d93d3a16dcd0782c.setIcon(icon_93c04b646829bfa17c418c356d2ace50);
+        
+    
+        var popup_8938bf99ae5790e569529c30b3a1fe33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_840e2e572fe5bc35fe574f2753a34743 = $(`<div id="html_840e2e572fe5bc35fe574f2753a34743" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DE NEUVILLE SUR AIN - 02/04/2023</div>`)[0];
+                popup_8938bf99ae5790e569529c30b3a1fe33.setContent(html_840e2e572fe5bc35fe574f2753a34743);
+            
+        
+
+        marker_033ad4501c9358b6d93d3a16dcd0782c.bindPopup(popup_8938bf99ae5790e569529c30b3a1fe33)
+        ;
+
+        
+    
+    
+            var marker_a437258faaca082d1e379f08c6db39c2 = L.marker(
+                [45.50941349600143, 4.919821618999053],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_f458c53bfed2926f53f0ba8b7606ce41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_a437258faaca082d1e379f08c6db39c2.setIcon(icon_f458c53bfed2926f53f0ba8b7606ce41);
+        
+    
+        var popup_7cccdc183da5aaddd88a1683f36ecc1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05e1094dc279f6465d9c46848395f258 = $(`<div id="html_05e1094dc279f6465d9c46848395f258" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE VIENNE - 26/03/2023</div>`)[0];
+                popup_7cccdc183da5aaddd88a1683f36ecc1e.setContent(html_05e1094dc279f6465d9c46848395f258);
+            
+        
+
+        marker_a437258faaca082d1e379f08c6db39c2.bindPopup(popup_7cccdc183da5aaddd88a1683f36ecc1e)
+        ;
+
+        
+    
+    
+            var marker_590a78fa724535b8c3757ae9a4fc987b = L.marker(
+                [45.47418976532239, 4.508641208724493],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_3a318cb511b1643b211a4d6a092a4b0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_590a78fa724535b8c3757ae9a4fc987b.setIcon(icon_3a318cb511b1643b211a4d6a092a4b0a);
+        
+    
+        var popup_be36ef7988f82701c39055636755099f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27f3185cc12e3a31f1577b113273f7ef = $(`<div id="html_27f3185cc12e3a31f1577b113273f7ef" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX CYCLISAINTE DE SAINT CHAMOND - 26/03/2023</div>`)[0];
+                popup_be36ef7988f82701c39055636755099f.setContent(html_27f3185cc12e3a31f1577b113273f7ef);
+            
+        
+
+        marker_590a78fa724535b8c3757ae9a4fc987b.bindPopup(popup_be36ef7988f82701c39055636755099f)
+        ;
+
+        
+    
+    
+            var marker_f8a45a1e184ab737bc880cdb371e42d6 = L.marker(
+                [45.958261944050655, 5.2819841358624595],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_513b48f4f04375acfa5cddcf15df8140 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_f8a45a1e184ab737bc880cdb371e42d6.setIcon(icon_513b48f4f04375acfa5cddcf15df8140);
+        
+    
+        var popup_723ac2a7511668f51e0f4777df859faa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f9e323d2d7b649746033b1a03ca4797 = $(`<div id="html_5f9e323d2d7b649746033b1a03ca4797" style="width: 100.0%; height: 100.0%;">Access hommes - 2EME PRIX DE SAINT MAURICE DE SAINT REMENS  - 12/03/2023</div>`)[0];
+                popup_723ac2a7511668f51e0f4777df859faa.setContent(html_5f9e323d2d7b649746033b1a03ca4797);
+            
+        
+
+        marker_f8a45a1e184ab737bc880cdb371e42d6.bindPopup(popup_723ac2a7511668f51e0f4777df859faa)
+        ;
+
+        
+    
+    
+            var marker_4dbf88ccf19414ef668b0993a1d7c863 = L.marker(
+                [46.13576690898871, 3.456645121516512],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_92b20f88f7b29d3ea75f926da16a1182 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_4dbf88ccf19414ef668b0993a1d7c863.setIcon(icon_92b20f88f7b29d3ea75f926da16a1182);
+        
+    
+        var popup_a374da0452a021126a5488fadad475f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b241d97ac3accfc3c2668fc92f4d5798 = $(`<div id="html_b241d97ac3accfc3c2668fc92f4d5798" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DE LA ZONE INDUSTRIELLE DE CUSSET - 12/03/2023</div>`)[0];
+                popup_a374da0452a021126a5488fadad475f5.setContent(html_b241d97ac3accfc3c2668fc92f4d5798);
+            
+        
+
+        marker_4dbf88ccf19414ef668b0993a1d7c863.bindPopup(popup_a374da0452a021126a5488fadad475f5)
+        ;
+
+        
+    
+    
+            var marker_ba4c287d06236518f4bf2760e1746bf8 = L.marker(
+                [45.85273891514057, 4.531250762995143],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_782f42630a77dbde19ecf68799314b02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_ba4c287d06236518f4bf2760e1746bf8.setIcon(icon_782f42630a77dbde19ecf68799314b02);
+        
+    
+        var popup_a4371b53169c76f5326d4fc176158966 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d774c945b011528470e43a11ec7cef7c = $(`<div id="html_d774c945b011528470e43a11ec7cef7c" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX TARARE POPEY - 11/03/2023</div>`)[0];
+                popup_a4371b53169c76f5326d4fc176158966.setContent(html_d774c945b011528470e43a11ec7cef7c);
+            
+        
+
+        marker_ba4c287d06236518f4bf2760e1746bf8.bindPopup(popup_a4371b53169c76f5326d4fc176158966)
+        ;
+
+        
+    
+    
+            var marker_4b89ce97109172ba305c7780e880e54f = L.marker(
+                [45.739798737120445, 3.1869218477964356],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_1bad3c39f53d6ba14c2861e429c12a00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_4b89ce97109172ba305c7780e880e54f.setIcon(icon_1bad3c39f53d6ba14c2861e429c12a00);
+        
+    
+        var popup_c8d4aab8e47566de0c3117c3d7cfe9a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_937465cc910f576ecf7e5e79a84103a0 = $(`<div id="html_937465cc910f576ecf7e5e79a84103a0" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX AUTO PIECES AUVERGNE - 05/03/2023</div>`)[0];
+                popup_c8d4aab8e47566de0c3117c3d7cfe9a3.setContent(html_937465cc910f576ecf7e5e79a84103a0);
+            
+        
+
+        marker_4b89ce97109172ba305c7780e880e54f.bindPopup(popup_c8d4aab8e47566de0c3117c3d7cfe9a3)
+        ;
+
+        
+    
+    
+            var marker_9e078b33636190b9c69eb99319167e6a = L.marker(
+                [45.82127152839855, 3.0677680864820225],
+                {}
+            ).addTo(feature_group_f310906ee39be8e9793e928af493727d);
+        
+    
+            var icon_25f8e488db113aee3c4c232128e8ce67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_9e078b33636190b9c69eb99319167e6a.setIcon(icon_25f8e488db113aee3c4c232128e8ce67);
+        
+    
+        var popup_bfc5d084d531b4983150057852a8cb22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55ae716e982ed641d33133065da0bde2 = $(`<div id="html_55ae716e982ed641d33133065da0bde2" style="width: 100.0%; height: 100.0%;">Access hommes - PROLOGUE VALLEE DU BEDAT - 26/02/2023</div>`)[0];
+                popup_bfc5d084d531b4983150057852a8cb22.setContent(html_55ae716e982ed641d33133065da0bde2);
+            
+        
+
+        marker_9e078b33636190b9c69eb99319167e6a.bindPopup(popup_bfc5d084d531b4983150057852a8cb22)
+        ;
+
+        
+    
+    
+            var feature_group_596217fdfac4c2b5861e1fa50432021b = L.featureGroup(
+                {}
+            ).addTo(map_dbb5255598866b2eec2aa86289a3a263);
+        
+    
+            var marker_f44d221c9f03f8d6eb512bf8440d5cae = L.marker(
+                [46.12482537602985, 6.30665191287539],
+                {}
+            ).addTo(feature_group_596217fdfac4c2b5861e1fa50432021b);
+        
+    
+            var icon_05077d2dd92b92ba4aaa54ca5aff1323 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f44d221c9f03f8d6eb512bf8440d5cae.setIcon(icon_05077d2dd92b92ba4aaa54ca5aff1323);
+        
+    
+        var popup_8ea1a5b16a638969cd3b6fe1ae997f3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c15cdff1772c63baa1ea7dadc3cb2f14 = $(`<div id="html_c15cdff1772c63baa1ea7dadc3cb2f14" style="width: 100.0%; height: 100.0%;">Gentlemen - GENTLEMAN DE SCIENTRIER - 15/10/2023</div>`)[0];
+                popup_8ea1a5b16a638969cd3b6fe1ae997f3f.setContent(html_c15cdff1772c63baa1ea7dadc3cb2f14);
+            
+        
+
+        marker_f44d221c9f03f8d6eb512bf8440d5cae.bindPopup(popup_8ea1a5b16a638969cd3b6fe1ae997f3f)
+        ;
+
+        
+    
+    
+            var marker_39737b5cff027605bbee9f3eced2a3c6 = L.marker(
+                [45.98540079608287, 4.706720106538026],
+                {}
+            ).addTo(feature_group_596217fdfac4c2b5861e1fa50432021b);
+        
+    
+            var icon_fcfb1637b2fc16fa777b898faa52c8a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_39737b5cff027605bbee9f3eced2a3c6.setIcon(icon_fcfb1637b2fc16fa777b898faa52c8a2);
+        
+    
+        var popup_7c952c0dbcefde3b97436fd5ae7accb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a21bb6d18dbeae9c40cb0b8e524623d9 = $(`<div id="html_a21bb6d18dbeae9c40cb0b8e524623d9" style="width: 100.0%; height: 100.0%;">Gentlemen - GENTLEMAN CALADOIS - 14/10/2023</div>`)[0];
+                popup_7c952c0dbcefde3b97436fd5ae7accb9.setContent(html_a21bb6d18dbeae9c40cb0b8e524623d9);
+            
+        
+
+        marker_39737b5cff027605bbee9f3eced2a3c6.bindPopup(popup_7c952c0dbcefde3b97436fd5ae7accb9)
+        ;
+
+        
+    
+    
+            var marker_1caf29c305f85569934f81d6eca8b44a = L.marker(
+                [46.106561753277525, 4.740908218016978],
+                {}
+            ).addTo(feature_group_596217fdfac4c2b5861e1fa50432021b);
+        
+    
+            var icon_f3af4f00f7067d52fc96b54e041b8dd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1caf29c305f85569934f81d6eca8b44a.setIcon(icon_f3af4f00f7067d52fc96b54e041b8dd6);
+        
+    
+        var popup_b865e4524ac5d7d0f8458043b5aa7697 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5004cee67a91a6e76c2fecf859bd8284 = $(`<div id="html_5004cee67a91a6e76c2fecf859bd8284" style="width: 100.0%; height: 100.0%;">Gentlemen - GENTLEMEN DE TAPONAS - 07/10/2023</div>`)[0];
+                popup_b865e4524ac5d7d0f8458043b5aa7697.setContent(html_5004cee67a91a6e76c2fecf859bd8284);
+            
+        
+
+        marker_1caf29c305f85569934f81d6eca8b44a.bindPopup(popup_b865e4524ac5d7d0f8458043b5aa7697)
+        ;
+
+        
+    
+    
+            var marker_df197fa54be66f2321a0884c5458e484 = L.marker(
+                [45.06167086059891, 2.93972209594796],
+                {}
+            ).addTo(feature_group_596217fdfac4c2b5861e1fa50432021b);
+        
+    
+            var icon_3ef167fdecc0ee603789d18220f03de1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_df197fa54be66f2321a0884c5458e484.setIcon(icon_3ef167fdecc0ee603789d18220f03de1);
+        
+    
+        var popup_c62d4ad6c70d386c7270d097993d6966 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29ce20fad7f0657a03e361db505573fd = $(`<div id="html_29ce20fad7f0657a03e361db505573fd" style="width: 100.0%; height: 100.0%;">Gentlemen - GENTLEMEN - 24/09/2023</div>`)[0];
+                popup_c62d4ad6c70d386c7270d097993d6966.setContent(html_29ce20fad7f0657a03e361db505573fd);
+            
+        
+
+        marker_df197fa54be66f2321a0884c5458e484.bindPopup(popup_c62d4ad6c70d386c7270d097993d6966)
+        ;
+
+        
+    
+    
+            var feature_group_97560fc49f4893c0baa88d0b9170c4fe = L.featureGroup(
+                {}
+            ).addTo(map_dbb5255598866b2eec2aa86289a3a263);
+        
+    
+            var marker_6b3ba94c1aae3783b67252323f97f969 = L.marker(
+                [45.151511337127204, 3.3991109677281046],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_73b8278ab4afbd31d64c9b2f3d6196dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6b3ba94c1aae3783b67252323f97f969.setIcon(icon_73b8278ab4afbd31d64c9b2f3d6196dd);
+        
+    
+        var popup_ee797f20b595117c640bdf786b9fa769 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6ee5d0f60dcefbddab9ca3db472251e = $(`<div id="html_d6ee5d0f60dcefbddab9ca3db472251e" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DES GRIMPEURS LA CLAUDE SEGUY - 14/10/2023</div>`)[0];
+                popup_ee797f20b595117c640bdf786b9fa769.setContent(html_d6ee5d0f60dcefbddab9ca3db472251e);
+            
+        
+
+        marker_6b3ba94c1aae3783b67252323f97f969.bindPopup(popup_ee797f20b595117c640bdf786b9fa769)
+        ;
+
+        
+    
+    
+            var marker_fab1f0205c982201394b58f519fb138a = L.marker(
+                [45.91259153212296, 3.065414999141891],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_244e4afda025fcf73d55d009030183bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fab1f0205c982201394b58f519fb138a.setIcon(icon_244e4afda025fcf73d55d009030183bd);
+        
+    
+        var popup_67e177f90b1e81c5eb7c061767050e5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_483fefc063a11b6f5ce808daa75cf9f3 = $(`<div id="html_483fefc063a11b6f5ce808daa75cf9f3" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DES GRIMPEURS MONTEE DE SANS SOUCI - 30/09/2023</div>`)[0];
+                popup_67e177f90b1e81c5eb7c061767050e5d.setContent(html_483fefc063a11b6f5ce808daa75cf9f3);
+            
+        
+
+        marker_fab1f0205c982201394b58f519fb138a.bindPopup(popup_67e177f90b1e81c5eb7c061767050e5d)
+        ;
+
+        
+    
+    
+            var marker_e0794b67e7f7d9c6b144827987a700f9 = L.marker(
+                [45.74028987084943, 3.1960403085753297],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_64fa6a246c0da891ff53efd3d5e525d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e0794b67e7f7d9c6b144827987a700f9.setIcon(icon_64fa6a246c0da891ff53efd3d5e525d1);
+        
+    
+        var popup_102234a3e0851884844c1169d39448de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf28c63c74b30bc390c7513c3c9fa6df = $(`<div id="html_cf28c63c74b30bc390c7513c3c9fa6df" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DES GRIMPEURS MONTEE DE BERZET - 23/09/2023</div>`)[0];
+                popup_102234a3e0851884844c1169d39448de.setContent(html_cf28c63c74b30bc390c7513c3c9fa6df);
+            
+        
+
+        marker_e0794b67e7f7d9c6b144827987a700f9.bindPopup(popup_102234a3e0851884844c1169d39448de)
+        ;
+
+        
+    
+    
+            var marker_c247e4aa3143c3db008f1294416d0e8d = L.marker(
+                [45.105950426062, 2.8750911898802096],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_6851b63108ed0e37d7c979e50ff1a484 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c247e4aa3143c3db008f1294416d0e8d.setIcon(icon_6851b63108ed0e37d7c979e50ff1a484);
+        
+    
+        var popup_265eb44688917a26d7c0c43bfa9f66bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_803b1bc5d4bc2d19d63fb54e5ec4d474 = $(`<div id="html_803b1bc5d4bc2d19d63fb54e5ec4d474" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DES GRIMPEURS MONTEE DE PRAT DE BOUC - 10/09/2023</div>`)[0];
+                popup_265eb44688917a26d7c0c43bfa9f66bb.setContent(html_803b1bc5d4bc2d19d63fb54e5ec4d474);
+            
+        
+
+        marker_c247e4aa3143c3db008f1294416d0e8d.bindPopup(popup_265eb44688917a26d7c0c43bfa9f66bb)
+        ;
+
+        
+    
+    
+            var marker_0d43e01bb6638e8e67a923b9a14c7d63 = L.marker(
+                [46.14091600300268, 6.1279588612928695],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_61cdfd1dd8844c168dc3b9a8047995eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0d43e01bb6638e8e67a923b9a14c7d63.setIcon(icon_61cdfd1dd8844c168dc3b9a8047995eb);
+        
+    
+        var popup_27feaeabcba7bf4b317d2c5035615991 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdc8f55120f5aca84e06f5a7442acd6d = $(`<div id="html_cdc8f55120f5aca84e06f5a7442acd6d" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - GRIMPEE DE LA CROISETTE - 20/08/2023</div>`)[0];
+                popup_27feaeabcba7bf4b317d2c5035615991.setContent(html_cdc8f55120f5aca84e06f5a7442acd6d);
+            
+        
+
+        marker_0d43e01bb6638e8e67a923b9a14c7d63.bindPopup(popup_27feaeabcba7bf4b317d2c5035615991)
+        ;
+
+        
+    
+    
+            var marker_23b5d7808f1fe971ed73102ac5cd748b = L.marker(
+                [45.93374530230617, 6.4347891928523575],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_39af80723be97995f8c7e372e5dda236 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_23b5d7808f1fe971ed73102ac5cd748b.setIcon(icon_39af80723be97995f8c7e372e5dda236);
+        
+    
+        var popup_9356890bbc2cf4e87e5234da38672c32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cac69d81780de53b0cb4b54be77c698c = $(`<div id="html_cac69d81780de53b0cb4b54be77c698c" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - LE BOUQUETIN - 15/08/2023</div>`)[0];
+                popup_9356890bbc2cf4e87e5234da38672c32.setContent(html_cac69d81780de53b0cb4b54be77c698c);
+            
+        
+
+        marker_23b5d7808f1fe971ed73102ac5cd748b.bindPopup(popup_9356890bbc2cf4e87e5234da38672c32)
+        ;
+
+        
+    
+    
+            var marker_98829aba87133c09cab3dbc96c82b406 = L.marker(
+                [45.04157728752307, 3.090599787863402],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_4d07a1b8114d14384981eac48118ef41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_98829aba87133c09cab3dbc96c82b406.setIcon(icon_4d07a1b8114d14384981eac48118ef41);
+        
+    
+        var popup_5cc8e8a71d039f71f4daa4f894a5b213 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e5d665296944aae8b073ce1f5e63aa6 = $(`<div id="html_4e5d665296944aae8b073ce1f5e63aa6" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - MONTEE CHRISTIAN ROUFFIAC - 12/08/2023</div>`)[0];
+                popup_5cc8e8a71d039f71f4daa4f894a5b213.setContent(html_4e5d665296944aae8b073ce1f5e63aa6);
+            
+        
+
+        marker_98829aba87133c09cab3dbc96c82b406.bindPopup(popup_5cc8e8a71d039f71f4daa4f894a5b213)
+        ;
+
+        
+    
+    
+            var marker_7284aa87b476f533d8e9d014441d5673 = L.marker(
+                [45.02018532791884, 3.591871501540957],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_072bcf85e4ae1df4d9bcb1b777636158 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7284aa87b476f533d8e9d014441d5673.setIcon(icon_072bcf85e4ae1df4d9bcb1b777636158);
+        
+    
+        var popup_d1c22f11834af5c29843ea10dab8aef9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ba58b3ade84fd0308025f3818bbc509 = $(`<div id="html_2ba58b3ade84fd0308025f3818bbc509" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DES GRIMPEURS MONTEE DE PEYRA TAILLADE - 06/08/2023</div>`)[0];
+                popup_d1c22f11834af5c29843ea10dab8aef9.setContent(html_2ba58b3ade84fd0308025f3818bbc509);
+            
+        
+
+        marker_7284aa87b476f533d8e9d014441d5673.bindPopup(popup_d1c22f11834af5c29843ea10dab8aef9)
+        ;
+
+        
+    
+    
+            var marker_deb0f4ee5b8fb2d5f88f5bfed8bccff7 = L.marker(
+                [46.12771063644255, 6.525498263324115],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_5aeba8404767ace6cf968a5bfe3da8bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_deb0f4ee5b8fb2d5f88f5bfed8bccff7.setIcon(icon_5aeba8404767ace6cf968a5bfe3da8bf);
+        
+    
+        var popup_ec370376cdfabb2692a65e209c924e34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f784a3fe875f15b4a1834a7e5c3293f0 = $(`<div id="html_f784a3fe875f15b4a1834a7e5c3293f0" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - GRIMPEE DE LA RAMAZ - TROPHEE DES GRIMPEES DE HAUTE SAVOIE - 30/07/2023</div>`)[0];
+                popup_ec370376cdfabb2692a65e209c924e34.setContent(html_f784a3fe875f15b4a1834a7e5c3293f0);
+            
+        
+
+        marker_deb0f4ee5b8fb2d5f88f5bfed8bccff7.bindPopup(popup_ec370376cdfabb2692a65e209c924e34)
+        ;
+
+        
+    
+    
+            var marker_0eff3d01a26de4cae879780e25cf2150 = L.marker(
+                [45.112826379105044, 3.345820200759505],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_f4bfa8b946b1404b2fa9b77753187c5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0eff3d01a26de4cae879780e25cf2150.setIcon(icon_f4bfa8b946b1404b2fa9b77753187c5c);
+        
+    
+        var popup_2efd1e60abbc400ea3c098513e23d90f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a815447955e4a7ab06ae42b39a5545db = $(`<div id="html_a815447955e4a7ab06ae42b39a5545db" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DES GRIMPEURS MONTEE AURIAC L EGLISE - 29/07/2023</div>`)[0];
+                popup_2efd1e60abbc400ea3c098513e23d90f.setContent(html_a815447955e4a7ab06ae42b39a5545db);
+            
+        
+
+        marker_0eff3d01a26de4cae879780e25cf2150.bindPopup(popup_2efd1e60abbc400ea3c098513e23d90f)
+        ;
+
+        
+    
+    
+            var marker_21bf9e7194dd79fe192bfdecab0a6cd3 = L.marker(
+                [45.96377053971328, 5.820720806421632],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_aaa2ad5faea8954c9c9fad67b9c31074 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_21bf9e7194dd79fe192bfdecab0a6cd3.setIcon(icon_aaa2ad5faea8954c9c9fad67b9c31074);
+        
+    
+        var popup_f864986ea016ee888bef011764f34e46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcd052ec6bda6b6085b9457d630adfa6 = $(`<div id="html_fcd052ec6bda6b6085b9457d630adfa6" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - 4ème GRIMPEE DU COL DE LA BICHE - 23/07/2023</div>`)[0];
+                popup_f864986ea016ee888bef011764f34e46.setContent(html_fcd052ec6bda6b6085b9457d630adfa6);
+            
+        
+
+        marker_21bf9e7194dd79fe192bfdecab0a6cd3.bindPopup(popup_f864986ea016ee888bef011764f34e46)
+        ;
+
+        
+    
+    
+            var marker_44bfc552f79bcd9834c22e79e5a624b7 = L.marker(
+                [45.1447262711923, 5.8283900886424025],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_f4ad45a8e0152f4bed580f02db2b6072 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_44bfc552f79bcd9834c22e79e5a624b7.setIcon(icon_f4ad45a8e0152f4bed580f02db2b6072);
+        
+    
+        var popup_53867a0cb67d1fe718be267dbc92aa33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f4b73b136884fab886646ed86a732e5 = $(`<div id="html_5f4b73b136884fab886646ed86a732e5" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - GRIMPEE DE CHAMROUSSE - 08/07/2023</div>`)[0];
+                popup_53867a0cb67d1fe718be267dbc92aa33.setContent(html_5f4b73b136884fab886646ed86a732e5);
+            
+        
+
+        marker_44bfc552f79bcd9834c22e79e5a624b7.bindPopup(popup_53867a0cb67d1fe718be267dbc92aa33)
+        ;
+
+        
+    
+    
+            var marker_d2a8d4c61a27d81d4747e866ea09274d = L.marker(
+                [45.645482242364764, 3.7054584263311954],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_dbbedd1199a48b0cc48a617f138459eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d2a8d4c61a27d81d4747e866ea09274d.setIcon(icon_dbbedd1199a48b0cc48a617f138459eb);
+        
+    
+        var popup_bd60b15f64e49624d85df70e278db785 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0660acd15b1bda8de1dafc0bb544bf82 = $(`<div id="html_0660acd15b1bda8de1dafc0bb544bf82" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DES GRIMPEURS MONTEE CHRONOMETREE DU COL DU BEAL - 01/07/2023</div>`)[0];
+                popup_bd60b15f64e49624d85df70e278db785.setContent(html_0660acd15b1bda8de1dafc0bb544bf82);
+            
+        
+
+        marker_d2a8d4c61a27d81d4747e866ea09274d.bindPopup(popup_bd60b15f64e49624d85df70e278db785)
+        ;
+
+        
+    
+    
+            var marker_be673774775100a769d1c761cc97c111 = L.marker(
+                [45.57112619527187, 2.914505726695987],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_cd779ec423bc49fe8e93dbfd14022999 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_be673774775100a769d1c761cc97c111.setIcon(icon_cd779ec423bc49fe8e93dbfd14022999);
+        
+    
+        var popup_dbea7574cdc612a0f3791c172cb79a58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_843229c99bf3940e16f6dc380256c30a = $(`<div id="html_843229c99bf3940e16f6dc380256c30a" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DES GRIMPEURS MONTEE CROIX MORAND - 24/06/2023</div>`)[0];
+                popup_dbea7574cdc612a0f3791c172cb79a58.setContent(html_843229c99bf3940e16f6dc380256c30a);
+            
+        
+
+        marker_be673774775100a769d1c761cc97c111.bindPopup(popup_dbea7574cdc612a0f3791c172cb79a58)
+        ;
+
+        
+    
+    
+            var marker_9aa4fdc786b1abcd16ec6177d70b33c7 = L.marker(
+                [45.94374816695808, 6.623560981410177],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_60e06fd3b75327dd3b0c923c893d5305 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9aa4fdc786b1abcd16ec6177d70b33c7.setIcon(icon_60e06fd3b75327dd3b0c923c893d5305);
+        
+    
+        var popup_07dc5406069518eb76dd75539f3b3a86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5620826b2b055d9c8c444f26d0188014 = $(`<div id="html_5620826b2b055d9c8c444f26d0188014" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - GRIMPEE SALLANCHES-CORDON - 24/06/2023</div>`)[0];
+                popup_07dc5406069518eb76dd75539f3b3a86.setContent(html_5620826b2b055d9c8c444f26d0188014);
+            
+        
+
+        marker_9aa4fdc786b1abcd16ec6177d70b33c7.bindPopup(popup_07dc5406069518eb76dd75539f3b3a86)
+        ;
+
+        
+    
+    
+            var marker_8e92b0523f757e33ec10f6899d22d56c = L.marker(
+                [45.08240040140401, 2.5250332133267093],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_2c2eba31627f88fb93ea9b38a963212d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8e92b0523f757e33ec10f6899d22d56c.setIcon(icon_2c2eba31627f88fb93ea9b38a963212d);
+        
+    
+        var popup_cc753f7f7f5a526823ce6514a3abb5f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84d6e25dc9240a7d1380a68124673925 = $(`<div id="html_84d6e25dc9240a7d1380a68124673925" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DES GRIMPEURS COL DE LEGAL - 10/06/2023</div>`)[0];
+                popup_cc753f7f7f5a526823ce6514a3abb5f4.setContent(html_84d6e25dc9240a7d1380a68124673925);
+            
+        
+
+        marker_8e92b0523f757e33ec10f6899d22d56c.bindPopup(popup_cc753f7f7f5a526823ce6514a3abb5f4)
+        ;
+
+        
+    
+    
+            var marker_e29a2914e5ba87f9c4f34dc0f36ee70a = L.marker(
+                [45.56939908326893, 2.9216970418878963],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_775f1c334810658c5ba0c7f9afaa2cb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e29a2914e5ba87f9c4f34dc0f36ee70a.setIcon(icon_775f1c334810658c5ba0c7f9afaa2cb2);
+        
+    
+        var popup_60130ab5e1320e940b0c760e38e82ac8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1ce958f9e165b12aa4e5ca9e13f7786 = $(`<div id="html_e1ce958f9e165b12aa4e5ca9e13f7786" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DES GRIMPEURS MONTEE DE LA CROIX ROBERT - 03/06/2023</div>`)[0];
+                popup_60130ab5e1320e940b0c760e38e82ac8.setContent(html_e1ce958f9e165b12aa4e5ca9e13f7786);
+            
+        
+
+        marker_e29a2914e5ba87f9c4f34dc0f36ee70a.bindPopup(popup_60130ab5e1320e940b0c760e38e82ac8)
+        ;
+
+        
+    
+    
+            var marker_a849164395b78e033783f1e1a8aba014 = L.marker(
+                [44.5575010942463, 4.304550975521596],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_a0fdd746774363132ccaa8aa91f858c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a849164395b78e033783f1e1a8aba014.setIcon(icon_a0fdd746774363132ccaa8aa91f858c2);
+        
+    
+        var popup_32a1ee9cadd678311bc471acb2f3354d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f116cf8505da594719fa1978cd1845e8 = $(`<div id="html_f116cf8505da594719fa1978cd1845e8" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DES GRIMPEURS MONTEE AGGLO TOUR ISSOIRE TOUR - 27/05/2023</div>`)[0];
+                popup_32a1ee9cadd678311bc471acb2f3354d.setContent(html_f116cf8505da594719fa1978cd1845e8);
+            
+        
+
+        marker_a849164395b78e033783f1e1a8aba014.bindPopup(popup_32a1ee9cadd678311bc471acb2f3354d)
+        ;
+
+        
+    
+    
+            var marker_4a956fa5f9a16c80cc7ead13047dd96f = L.marker(
+                [46.270792815683386, 6.360675574093475],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_2409ccb71dd91430740d8fc41f938cb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4a956fa5f9a16c80cc7ead13047dd96f.setIcon(icon_2409ccb71dd91430740d8fc41f938cb3);
+        
+    
+        var popup_470f829c03f92ba25d34a4c93d61b90d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ddeb6d55edd9230408825c5bf506b84 = $(`<div id="html_2ddeb6d55edd9230408825c5bf506b84" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - GRIMPEE DES VOIRONS - 27/05/2023</div>`)[0];
+                popup_470f829c03f92ba25d34a4c93d61b90d.setContent(html_2ddeb6d55edd9230408825c5bf506b84);
+            
+        
+
+        marker_4a956fa5f9a16c80cc7ead13047dd96f.bindPopup(popup_470f829c03f92ba25d34a4c93d61b90d)
+        ;
+
+        
+    
+    
+            var marker_199db1bb52a41d486986b0787e56a7dd = L.marker(
+                [45.10824702063469, 2.685509268460828],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_07732dff71c8175e91116a6d4b768ba0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_199db1bb52a41d486986b0787e56a7dd.setIcon(icon_07732dff71c8175e91116a6d4b768ba0);
+        
+    
+        var popup_d71e1dff1a3cc5be560e49c157be31ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50a44ce39a9f817215cc64006f020115 = $(`<div id="html_50a44ce39a9f817215cc64006f020115" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DU PUY MARY GRAND SITE 3ÈME EPREUVE - 21/05/2023</div>`)[0];
+                popup_d71e1dff1a3cc5be560e49c157be31ff.setContent(html_50a44ce39a9f817215cc64006f020115);
+            
+        
+
+        marker_199db1bb52a41d486986b0787e56a7dd.bindPopup(popup_d71e1dff1a3cc5be560e49c157be31ff)
+        ;
+
+        
+    
+    
+            var marker_cf72e009e1c52ed1e7e04ace75f30c19 = L.marker(
+                [45.10930011175465, 2.6775569150099137],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_9ab1cfe2a7c99d441f167c08ef783547 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_cf72e009e1c52ed1e7e04ace75f30c19.setIcon(icon_9ab1cfe2a7c99d441f167c08ef783547);
+        
+    
+        var popup_fc5fd9d23e98fd5262d82644a1388c1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dae5f0cd2e2c714d11f8bd345a9442e2 = $(`<div id="html_dae5f0cd2e2c714d11f8bd345a9442e2" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DU PUY MARY GRAND SITE 2ÈME EPREUVE - 21/05/2023</div>`)[0];
+                popup_fc5fd9d23e98fd5262d82644a1388c1e.setContent(html_dae5f0cd2e2c714d11f8bd345a9442e2);
+            
+        
+
+        marker_cf72e009e1c52ed1e7e04ace75f30c19.bindPopup(popup_fc5fd9d23e98fd5262d82644a1388c1e)
+        ;
+
+        
+    
+    
+            var marker_e5de391235dc326441f56aa6eefde0cf = L.marker(
+                [45.15826008759257, 2.775332037362246],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_18e264ce67aa200ac776eb5cad81e3b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e5de391235dc326441f56aa6eefde0cf.setIcon(icon_18e264ce67aa200ac776eb5cad81e3b0);
+        
+    
+        var popup_e6e349bec83e401cc6e73afa45c3c21d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbf3b3d1e01c639e9e0bf2c5558ea339 = $(`<div id="html_bbf3b3d1e01c639e9e0bf2c5558ea339" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DU PUY MARY GRAND SITE 1ÈRE EPREUVE - 20/05/2023</div>`)[0];
+                popup_e6e349bec83e401cc6e73afa45c3c21d.setContent(html_bbf3b3d1e01c639e9e0bf2c5558ea339);
+            
+        
+
+        marker_e5de391235dc326441f56aa6eefde0cf.bindPopup(popup_e6e349bec83e401cc6e73afa45c3c21d)
+        ;
+
+        
+    
+    
+            var marker_742f78d3c1c155ff36a0ff531bb7ec59 = L.marker(
+                [45.50731539253712, 2.8550961817066014],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_74a9b9056d4a1b2fbe25d8e90f0b4c15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_742f78d3c1c155ff36a0ff531bb7ec59.setIcon(icon_74a9b9056d4a1b2fbe25d8e90f0b4c15);
+        
+    
+        var popup_cc5cd779e92a39d13ddb7cecaee84071 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c63c498902b08eac16180d9e516ca685 = $(`<div id="html_c63c498902b08eac16180d9e516ca685" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DES GRIMPEURS MONTEE DE SUPER BESSE - 14/05/2023</div>`)[0];
+                popup_cc5cd779e92a39d13ddb7cecaee84071.setContent(html_c63c498902b08eac16180d9e516ca685);
+            
+        
+
+        marker_742f78d3c1c155ff36a0ff531bb7ec59.bindPopup(popup_cc5cd779e92a39d13ddb7cecaee84071)
+        ;
+
+        
+    
+    
+            var marker_c814b4814d86a603df6f8b8584824f29 = L.marker(
+                [45.53207468249314, 2.680199828282254],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_ac60e6e8577549712bec3033ec8510de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c814b4814d86a603df6f8b8584824f29.setIcon(icon_ac60e6e8577549712bec3033ec8510de);
+        
+    
+        var popup_a43e15936432df9adca5df0102364d79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b861444facc7adf4954966ebb0b930f = $(`<div id="html_7b861444facc7adf4954966ebb0b930f" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DES GRIMPEURS MONTEE SANCY OUEST - 13/05/2023</div>`)[0];
+                popup_a43e15936432df9adca5df0102364d79.setContent(html_7b861444facc7adf4954966ebb0b930f);
+            
+        
+
+        marker_c814b4814d86a603df6f8b8584824f29.bindPopup(popup_a43e15936432df9adca5df0102364d79)
+        ;
+
+        
+    
+    
+            var marker_fc5fdba5277f5ce8388b57a0cb9d6b34 = L.marker(
+                [44.97446020301776, 2.182491474986202],
+                {}
+            ).addTo(feature_group_97560fc49f4893c0baa88d0b9170c4fe);
+        
+    
+            var icon_560a80a5e50ff390ce79df7b707aa6db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fc5fdba5277f5ce8388b57a0cb9d6b34.setIcon(icon_560a80a5e50ff390ce79df7b707aa6db);
+        
+    
+        var popup_8c0b997b015df18ac209ce6d3c44bdae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39ac47bf7df479fc36fb323e02f8cb2e = $(`<div id="html_39ac47bf7df479fc36fb323e02f8cb2e" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - MONTEE CHRONOMETREE DE SIRAN - 23/04/2023</div>`)[0];
+                popup_8c0b997b015df18ac209ce6d3c44bdae.setContent(html_39ac47bf7df479fc36fb323e02f8cb2e);
+            
+        
+
+        marker_fc5fdba5277f5ce8388b57a0cb9d6b34.bindPopup(popup_8c0b997b015df18ac209ce6d3c44bdae)
+        ;
+
+        
+    
+    
+            var feature_group_090064b332d526f7de6533a699e63d79 = L.featureGroup(
+                {}
+            ).addTo(map_dbb5255598866b2eec2aa86289a3a263);
+        
+    
+            var marker_e6913fee9d6395172acba65578ae2f35 = L.marker(
+                [45.693239514156176, 5.055415712401287],
+                {}
+            ).addTo(feature_group_090064b332d526f7de6533a699e63d79);
+        
+    
+            var icon_442b2baaa11106f651dbf0cd299dd28f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e6913fee9d6395172acba65578ae2f35.setIcon(icon_442b2baaa11106f651dbf0cd299dd28f);
+        
+    
+        var popup_713d08d7336ce023a3fb502c65e2c16e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46b47e97a0452d709974a211e92fe0eb = $(`<div id="html_46b47e97a0452d709974a211e92fe0eb" style="width: 100.0%; height: 100.0%;">Test chronométré - CHALLENGE DES MURES - 14/10/2023</div>`)[0];
+                popup_713d08d7336ce023a3fb502c65e2c16e.setContent(html_46b47e97a0452d709974a211e92fe0eb);
+            
+        
+
+        marker_e6913fee9d6395172acba65578ae2f35.bindPopup(popup_713d08d7336ce023a3fb502c65e2c16e)
+        ;
+
+        
+    
+    
+            var marker_8e9f95f9453e7b07fc93be5b2b9fba77 = L.marker(
+                [46.37736957704918, 6.472008993685211],
+                {}
+            ).addTo(feature_group_090064b332d526f7de6533a699e63d79);
+        
+    
+            var icon_1c6e9c340963e9d988b4de8e86c64bd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8e9f95f9453e7b07fc93be5b2b9fba77.setIcon(icon_1c6e9c340963e9d988b4de8e86c64bd5);
+        
+    
+        var popup_ea275d8b2377f2c890719832a908e352 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e4a3c5d24dad93db23522649f89f315 = $(`<div id="html_1e4a3c5d24dad93db23522649f89f315" style="width: 100.0%; height: 100.0%;">Test chronométré - CHRONO DE L'OMS - CHAMPIONNAT DE HAUTE-SAVOIE DU CLM - 24/09/2023</div>`)[0];
+                popup_ea275d8b2377f2c890719832a908e352.setContent(html_1e4a3c5d24dad93db23522649f89f315);
+            
+        
+
+        marker_8e9f95f9453e7b07fc93be5b2b9fba77.bindPopup(popup_ea275d8b2377f2c890719832a908e352)
+        ;
+
+        
+    
+    
+            var marker_59a9eaa873220e451feab8b88bef38a9 = L.marker(
+                [45.91757301998048, 3.0566194648242737],
+                {}
+            ).addTo(feature_group_090064b332d526f7de6533a699e63d79);
+        
+    
+            var icon_5c81dd86f1dbf546922e5abf7bf7e594 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_59a9eaa873220e451feab8b88bef38a9.setIcon(icon_5c81dd86f1dbf546922e5abf7bf7e594);
+        
+    
+        var popup_66f0fc05f5892f19b7d8af423a8dfd1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2935a360d6b7559a4e92196ba982fbce = $(`<div id="html_2935a360d6b7559a4e92196ba982fbce" style="width: 100.0%; height: 100.0%;">Test chronométré - CHAMPIONNATS AUVERGNE-RHÔNE-ALPES ROUTE CLM PAR EQUIPE - 15/04/2023</div>`)[0];
+                popup_66f0fc05f5892f19b7d8af423a8dfd1c.setContent(html_2935a360d6b7559a4e92196ba982fbce);
+            
+        
+
+        marker_59a9eaa873220e451feab8b88bef38a9.bindPopup(popup_66f0fc05f5892f19b7d8af423a8dfd1c)
+        ;
+
+        
+    
+    
+            var feature_group_8e618cc9b5652f40a4184c869c44c16f = L.featureGroup(
+                {}
+            ).addTo(map_dbb5255598866b2eec2aa86289a3a263);
+        
+    
+            var marker_c063b51e2087886c18e6ba5bfdeb9d43 = L.marker(
+                [45.83678062024183, 5.294988859163333],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_6ea798b5ff59438365254fd28bcdbf1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c063b51e2087886c18e6ba5bfdeb9d43.setIcon(icon_6ea798b5ff59438365254fd28bcdbf1a);
+        
+    
+        var popup_7e8ee80a04a16d3b41dcd745f171c066 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2de9d0453ee6fa7b9c668c337e8610de = $(`<div id="html_2de9d0453ee6fa7b9c668c337e8610de" style="width: 100.0%; height: 100.0%;">Cyclosportive - CYCLO LES HÉROS - 08/10/2023</div>`)[0];
+                popup_7e8ee80a04a16d3b41dcd745f171c066.setContent(html_2de9d0453ee6fa7b9c668c337e8610de);
+            
+        
+
+        marker_c063b51e2087886c18e6ba5bfdeb9d43.bindPopup(popup_7e8ee80a04a16d3b41dcd745f171c066)
+        ;
+
+        
+    
+    
+            var marker_c0a96a0fdd0e6f3aba7f3298dce784a0 = L.marker(
+                [45.91315906574011, 3.8389600588785995],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_0f65c15754d347bc6161f778fde724fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c0a96a0fdd0e6f3aba7f3298dce784a0.setIcon(icon_0f65c15754d347bc6161f778fde724fd);
+        
+    
+        var popup_3f061514be992a9cafead1d80a9061ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73398c803fbd1362889506028893c732 = $(`<div id="html_73398c803fbd1362889506028893c732" style="width: 100.0%; height: 100.0%;">Cyclosportive - LA REMI CAVAGNA - 10/09/2023</div>`)[0];
+                popup_3f061514be992a9cafead1d80a9061ba.setContent(html_73398c803fbd1362889506028893c732);
+            
+        
+
+        marker_c0a96a0fdd0e6f3aba7f3298dce784a0.bindPopup(popup_3f061514be992a9cafead1d80a9061ba)
+        ;
+
+        
+    
+    
+            var marker_efee16f791a2af5074eee36ac4beb68a = L.marker(
+                [45.1597758977706, 6.081272804211093],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_3f0a3993ef6709f807f4a690bdb33afe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_efee16f791a2af5074eee36ac4beb68a.setIcon(icon_3f0a3993ef6709f807f4a690bdb33afe);
+        
+    
+        var popup_756321e0ae2cadd100a79770a494267a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed979f9e9bb9b24526c687596a603fe0 = $(`<div id="html_ed979f9e9bb9b24526c687596a603fe0" style="width: 100.0%; height: 100.0%;">Cyclosportive - GFNY ALPES VAUJANY - 28/08/2023</div>`)[0];
+                popup_756321e0ae2cadd100a79770a494267a.setContent(html_ed979f9e9bb9b24526c687596a603fe0);
+            
+        
+
+        marker_efee16f791a2af5074eee36ac4beb68a.bindPopup(popup_756321e0ae2cadd100a79770a494267a)
+        ;
+
+        
+    
+    
+            var marker_c256def8f038834d3abb4ecffb4ca324 = L.marker(
+                [45.84234610771549, 6.161696504700961],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_819171cb4bf26a19f79f2bfda78019ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c256def8f038834d3abb4ecffb4ca324.setIcon(icon_819171cb4bf26a19f79f2bfda78019ef);
+        
+    
+        var popup_96fb36476a5a76534aae6541ee2bea93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91a8cdcd2313eff3ac196f0a8f466180 = $(`<div id="html_91a8cdcd2313eff3ac196f0a8f466180" style="width: 100.0%; height: 100.0%;">Cyclosportive - DVELOS LAC D'ANNECY - 27/08/2023</div>`)[0];
+                popup_96fb36476a5a76534aae6541ee2bea93.setContent(html_91a8cdcd2313eff3ac196f0a8f466180);
+            
+        
+
+        marker_c256def8f038834d3abb4ecffb4ca324.bindPopup(popup_96fb36476a5a76534aae6541ee2bea93)
+        ;
+
+        
+    
+    
+            var marker_251f40014ae088d11e6b15b82b2e217a = L.marker(
+                [34.216686076219766, 70.37055473732829],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_30131c96a95dce0cfa9504a00287ce88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_251f40014ae088d11e6b15b82b2e217a.setIcon(icon_30131c96a95dce0cfa9504a00287ce88);
+        
+    
+        var popup_28d8d743b8456c2d10aaa49b3c2fbbe3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad7486392f3c78eb1b982ad375d20dbf = $(`<div id="html_ad7486392f3c78eb1b982ad375d20dbf" style="width: 100.0%; height: 100.0%;">Cyclosportive - ECHAPPE DU COL DE LA LOZE - 19/08/2023</div>`)[0];
+                popup_28d8d743b8456c2d10aaa49b3c2fbbe3.setContent(html_ad7486392f3c78eb1b982ad375d20dbf);
+            
+        
+
+        marker_251f40014ae088d11e6b15b82b2e217a.bindPopup(popup_28d8d743b8456c2d10aaa49b3c2fbbe3)
+        ;
+
+        
+    
+    
+            var marker_00500d222c1bace8015e543c89abb023 = L.marker(
+                [45.0362006224924, 3.0995431750000817],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_8b3fa5ac31ad6b52882e944eedd1e5ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_00500d222c1bace8015e543c89abb023.setIcon(icon_8b3fa5ac31ad6b52882e944eedd1e5ce);
+        
+    
+        var popup_3c53277d85cdc6069b74d26ba038880e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a76642f6236aefb03565c238c3d5a901 = $(`<div id="html_a76642f6236aefb03565c238c3d5a901" style="width: 100.0%; height: 100.0%;">Cyclosportive - L'ETAPE SANFLORAINE - 13/08/2023</div>`)[0];
+                popup_3c53277d85cdc6069b74d26ba038880e.setContent(html_a76642f6236aefb03565c238c3d5a901);
+            
+        
+
+        marker_00500d222c1bace8015e543c89abb023.bindPopup(popup_3c53277d85cdc6069b74d26ba038880e)
+        ;
+
+        
+    
+    
+            var marker_2de5c27732e9ae48164691ee0d7ae87b = L.marker(
+                [45.36179341698293, 6.321482725913008],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_4169a7e0f2a53aa8789c9065560eb144 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2de5c27732e9ae48164691ee0d7ae87b.setIcon(icon_4169a7e0f2a53aa8789c9065560eb144);
+        
+    
+        var popup_6af9d5d375814400ac18d14cb91af193 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ead767d57479d7b8fa9cd723c4db9a78 = $(`<div id="html_ead767d57479d7b8fa9cd723c4db9a78" style="width: 100.0%; height: 100.0%;">Cyclosportive - CYCLOSPORTIVE LA MADELEINE - 06/08/2023</div>`)[0];
+                popup_6af9d5d375814400ac18d14cb91af193.setContent(html_ead767d57479d7b8fa9cd723c4db9a78);
+            
+        
+
+        marker_2de5c27732e9ae48164691ee0d7ae87b.bindPopup(popup_6af9d5d375814400ac18d14cb91af193)
+        ;
+
+        
+    
+    
+            var marker_55d861675b1303d7e07a7342143fdb3e = L.marker(
+                [46.306027279997444, 5.935476964743137],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_5e8fc4741bc5a9e8c7656dcb1b06c2e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_55d861675b1303d7e07a7342143fdb3e.setIcon(icon_5e8fc4741bc5a9e8c7656dcb1b06c2e4);
+        
+    
+        var popup_341e158acbbf7c5043a7465f0b917b90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56d6206f3e43db753b1361349860a908 = $(`<div id="html_56d6206f3e43db753b1361349860a908" style="width: 100.0%; height: 100.0%;">Cyclosportive - LÉLEX PAYS DE GEX CYCLO - 30/07/2023</div>`)[0];
+                popup_341e158acbbf7c5043a7465f0b917b90.setContent(html_56d6206f3e43db753b1361349860a908);
+            
+        
+
+        marker_55d861675b1303d7e07a7342143fdb3e.bindPopup(popup_341e158acbbf7c5043a7465f0b917b90)
+        ;
+
+        
+    
+    
+            var marker_fc097bf7e58d0a0fc4a261cbb9d45a14 = L.marker(
+                [46.265005638615385, 6.83473114134381],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_c3fdd0dd8b8a55f2b5188c4e9d044b2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fc097bf7e58d0a0fc4a261cbb9d45a14.setIcon(icon_c3fdd0dd8b8a55f2b5188c4e9d044b2e);
+        
+    
+        var popup_544db03968532968b9c40ce1385a64c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a29c34c48e25d4309ee710d8eaa737b = $(`<div id="html_7a29c34c48e25d4309ee710d8eaa737b" style="width: 100.0%; height: 100.0%;">Cyclosportive - LA CHATEL CHABLAIS LEMAN RACE - 23/07/2023</div>`)[0];
+                popup_544db03968532968b9c40ce1385a64c6.setContent(html_7a29c34c48e25d4309ee710d8eaa737b);
+            
+        
+
+        marker_fc097bf7e58d0a0fc4a261cbb9d45a14.bindPopup(popup_544db03968532968b9c40ce1385a64c6)
+        ;
+
+        
+    
+    
+            var marker_0cb25e2051f9ed0879966bf1c0356ace = L.marker(
+                [45.451587178171444, 6.57071812769943],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_25c6a623c933b29066226ea5aacecbd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0cb25e2051f9ed0879966bf1c0356ace.setIcon(icon_25c6a623c933b29066226ea5aacecbd1);
+        
+    
+        var popup_962724ead47cdb92b820f6a760873efd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fdc23c8f503b6ab81f8e53611698996 = $(`<div id="html_9fdc23c8f503b6ab81f8e53611698996" style="width: 100.0%; height: 100.0%;">Cyclosportive - COL DE LA LOZE BY BRIDES-LES-BAINS - 16/07/2023</div>`)[0];
+                popup_962724ead47cdb92b820f6a760873efd.setContent(html_9fdc23c8f503b6ab81f8e53611698996);
+            
+        
+
+        marker_0cb25e2051f9ed0879966bf1c0356ace.bindPopup(popup_962724ead47cdb92b820f6a760873efd)
+        ;
+
+        
+    
+    
+            var marker_7fbb5f04c1ae77f42c94172d417ee6cc = L.marker(
+                [45.85140505939131, 5.78914161315639],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_d19327c589a44000c7a1b5a46193b2bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7fbb5f04c1ae77f42c94172d417ee6cc.setIcon(icon_d19327c589a44000c7a1b5a46193b2bb);
+        
+    
+        var popup_8fa5f86477b0c4d8ff0bd259a129182c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cab73cf6037a67fafe8dbad5e26aa8e3 = $(`<div id="html_cab73cf6037a67fafe8dbad5e26aa8e3" style="width: 100.0%; height: 100.0%;">Cyclosportive - L'AINDINOISE - 15/07/2023</div>`)[0];
+                popup_8fa5f86477b0c4d8ff0bd259a129182c.setContent(html_cab73cf6037a67fafe8dbad5e26aa8e3);
+            
+        
+
+        marker_7fbb5f04c1ae77f42c94172d417ee6cc.bindPopup(popup_8fa5f86477b0c4d8ff0bd259a129182c)
+        ;
+
+        
+    
+    
+            var marker_0b90ed60b8fa0b4ee7f49a984f503f8f = L.marker(
+                [45.19298599427384, 6.670371938000883],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_f094225ccaa9f0b8d9848ebffb9ec171 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0b90ed60b8fa0b4ee7f49a984f503f8f.setIcon(icon_f094225ccaa9f0b8d9848ebffb9ec171);
+        
+    
+        var popup_7d127cbac48780881e40d1669045e63c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a407d6d05cc06ac7ddd00b85a787421 = $(`<div id="html_5a407d6d05cc06ac7ddd00b85a787421" style="width: 100.0%; height: 100.0%;">Cyclosportive - RANDO DU FREJUS - 12/07/2023</div>`)[0];
+                popup_7d127cbac48780881e40d1669045e63c.setContent(html_5a407d6d05cc06ac7ddd00b85a787421);
+            
+        
+
+        marker_0b90ed60b8fa0b4ee7f49a984f503f8f.bindPopup(popup_7d127cbac48780881e40d1669045e63c)
+        ;
+
+        
+    
+    
+            var marker_bcfe2c0f419a3f973656ba6e2ec6ecc7 = L.marker(
+                [45.25765254924787, 6.402203362982753],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_5ce83f630542a0a272c769a070e00fd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bcfe2c0f419a3f973656ba6e2ec6ecc7.setIcon(icon_5ce83f630542a0a272c769a070e00fd9);
+        
+    
+        var popup_cde528f7f1eb866b6ff11175ea0e89de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f195109773b65667918af3d7d0f6a00 = $(`<div id="html_0f195109773b65667918af3d7d0f6a00" style="width: 100.0%; height: 100.0%;">Cyclosportive - LA MAURIENNE CLASSIQUE CYCLO - 09/07/2023</div>`)[0];
+                popup_cde528f7f1eb866b6ff11175ea0e89de.setContent(html_0f195109773b65667918af3d7d0f6a00);
+            
+        
+
+        marker_bcfe2c0f419a3f973656ba6e2ec6ecc7.bindPopup(popup_cde528f7f1eb866b6ff11175ea0e89de)
+        ;
+
+        
+    
+    
+            var marker_fa2cd04fffc899e853181494aaa7bb21 = L.marker(
+                [34.21304982635852, 70.37912033673982],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_b4a540f18a4ce3ecd6bed36eb9f413cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fa2cd04fffc899e853181494aaa7bb21.setIcon(icon_b4a540f18a4ce3ecd6bed36eb9f413cc);
+        
+    
+        var popup_20af778d5bfeff8fb2118b4215e1946b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35f916c6a6e2486bd2155a954b43adca = $(`<div id="html_35f916c6a6e2486bd2155a954b43adca" style="width: 100.0%; height: 100.0%;">Cyclosportive - ETAPE DU TOUR ANNEMASSE-MORZINE - 09/07/2023</div>`)[0];
+                popup_20af778d5bfeff8fb2118b4215e1946b.setContent(html_35f916c6a6e2486bd2155a954b43adca);
+            
+        
+
+        marker_fa2cd04fffc899e853181494aaa7bb21.bindPopup(popup_20af778d5bfeff8fb2118b4215e1946b)
+        ;
+
+        
+    
+    
+            var marker_3e893fcb8c2efe6a9c2620d1877e4e8e = L.marker(
+                [46.06752226642016, 6.585472155626537],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_d03737c4271f837aacf9db2be78132ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3e893fcb8c2efe6a9c2620d1877e4e8e.setIcon(icon_d03737c4271f837aacf9db2be78132ae);
+        
+    
+        var popup_eebc5cb3fbd3992db0d75a4c96cce4bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2c3b1495a15d733499272b796972939 = $(`<div id="html_f2c3b1495a15d733499272b796972939" style="width: 100.0%; height: 100.0%;">Cyclosportive - JPP NEUF DE COEUR - 02/07/2023</div>`)[0];
+                popup_eebc5cb3fbd3992db0d75a4c96cce4bc.setContent(html_f2c3b1495a15d733499272b796972939);
+            
+        
+
+        marker_3e893fcb8c2efe6a9c2620d1877e4e8e.bindPopup(popup_eebc5cb3fbd3992db0d75a4c96cce4bc)
+        ;
+
+        
+    
+    
+            var marker_f1a11326d10869dbeb0b040bd3c54318 = L.marker(
+                [45.93800855026558, 6.427957977199837],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_51c297b11018761c8f45c247abc09eb6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f1a11326d10869dbeb0b040bd3c54318.setIcon(icon_51c297b11018761c8f45c247abc09eb6);
+        
+    
+        var popup_143c6d47b115aec842b6ac37d6525c7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_632ec228a116f58bb766c13e2cd9f66c = $(`<div id="html_632ec228a116f58bb766c13e2cd9f66c" style="width: 100.0%; height: 100.0%;">Cyclosportive - LA GRAND BO - 25/06/2023</div>`)[0];
+                popup_143c6d47b115aec842b6ac37d6525c7c.setContent(html_632ec228a116f58bb766c13e2cd9f66c);
+            
+        
+
+        marker_f1a11326d10869dbeb0b040bd3c54318.bindPopup(popup_143c6d47b115aec842b6ac37d6525c7c)
+        ;
+
+        
+    
+    
+            var marker_3074fe0b2c4846b876e0f0b23393c51d = L.marker(
+                [45.31518979127559, 6.363575787402007],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_541a8a3141d3493dd76de73c409e0ec6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3074fe0b2c4846b876e0f0b23393c51d.setIcon(icon_541a8a3141d3493dd76de73c409e0ec6);
+        
+    
+        var popup_00b3b4dd753f6303f209094d0730e83a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f38bdd7aa67404741b44a89c79a4115b = $(`<div id="html_f38bdd7aa67404741b44a89c79a4115b" style="width: 100.0%; height: 100.0%;">Cyclosportive - TRILOGIE DE MAURIENNE - 23/06/2023</div>`)[0];
+                popup_00b3b4dd753f6303f209094d0730e83a.setContent(html_f38bdd7aa67404741b44a89c79a4115b);
+            
+        
+
+        marker_3074fe0b2c4846b876e0f0b23393c51d.bindPopup(popup_00b3b4dd753f6303f209094d0730e83a)
+        ;
+
+        
+    
+    
+            var marker_6d3a029b4072bb380822578d79919033 = L.marker(
+                [46.29092383311113, 5.689815224393358],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_7a0776bea338487b49dbece3f3203a86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6d3a029b4072bb380822578d79919033.setIcon(icon_7a0776bea338487b49dbece3f3203a86);
+        
+    
+        var popup_e22c31e554c8751e685e378f7d6ad62c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac9f67d0275fd3f48c7a47e0dff503f1 = $(`<div id="html_ac9f67d0275fd3f48c7a47e0dff503f1" style="width: 100.0%; height: 100.0%;">Cyclosportive - FORESTCIME - 23/06/2023</div>`)[0];
+                popup_e22c31e554c8751e685e378f7d6ad62c.setContent(html_ac9f67d0275fd3f48c7a47e0dff503f1);
+            
+        
+
+        marker_6d3a029b4072bb380822578d79919033.bindPopup(popup_e22c31e554c8751e685e378f7d6ad62c)
+        ;
+
+        
+    
+    
+            var marker_4b18d3f21048f6f6f8df669645731be6 = L.marker(
+                [45.15492959938507, 6.076844250061426],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_ddc90efc1e8504c7a5ce4378a962bb7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4b18d3f21048f6f6f8df669645731be6.setIcon(icon_ddc90efc1e8504c7a5ce4378a962bb7c);
+        
+    
+        var popup_d484c48cb051adb261f30a66620e11fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1d377acadef9719f8bdd5909e8fa061 = $(`<div id="html_c1d377acadef9719f8bdd5909e8fa061" style="width: 100.0%; height: 100.0%;">Cyclosportive - GFNY LA VAUJANY - 18/06/2023</div>`)[0];
+                popup_d484c48cb051adb261f30a66620e11fc.setContent(html_c1d377acadef9719f8bdd5909e8fa061);
+            
+        
+
+        marker_4b18d3f21048f6f6f8df669645731be6.bindPopup(popup_d484c48cb051adb261f30a66620e11fc)
+        ;
+
+        
+    
+    
+            var marker_d2e24e67c58e4b4cbc9353abf1e9d69a = L.marker(
+                [46.05690553893122, 6.584074970630434],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_9bd8679babc6e21d1f963f64752d34d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d2e24e67c58e4b4cbc9353abf1e9d69a.setIcon(icon_9bd8679babc6e21d1f963f64752d34d8);
+        
+    
+        var popup_4f2cec0d10a2084394391b82228ac187 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4d2075e4a19d47c9c13b52538176ed1 = $(`<div id="html_b4d2075e4a19d47c9c13b52538176ed1" style="width: 100.0%; height: 100.0%;">Cyclosportive - GRIMP'YAUTE - 18/06/2023</div>`)[0];
+                popup_4f2cec0d10a2084394391b82228ac187.setContent(html_b4d2075e4a19d47c9c13b52538176ed1);
+            
+        
+
+        marker_d2e24e67c58e4b4cbc9353abf1e9d69a.bindPopup(popup_4f2cec0d10a2084394391b82228ac187)
+        ;
+
+        
+    
+    
+            var marker_01022b49a30a1f70bc1b033029f0a2b9 = L.marker(
+                [45.092249299225294, 4.6335723092979135],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_b7b43cb498d83c003d9ebd624d5bee8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_01022b49a30a1f70bc1b033029f0a2b9.setIcon(icon_b7b43cb498d83c003d9ebd624d5bee8d);
+        
+    
+        var popup_7f5e53d7623adef21620fb7ffeca6673 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe22cd0d900360c102b52112f4ad4f70 = $(`<div id="html_fe22cd0d900360c102b52112f4ad4f70" style="width: 100.0%; height: 100.0%;">Cyclosportive - L'ARDÉCHOISE - 17/06/2023</div>`)[0];
+                popup_7f5e53d7623adef21620fb7ffeca6673.setContent(html_fe22cd0d900360c102b52112f4ad4f70);
+            
+        
+
+        marker_01022b49a30a1f70bc1b033029f0a2b9.bindPopup(popup_7f5e53d7623adef21620fb7ffeca6673)
+        ;
+
+        
+    
+    
+            var marker_b53d27c02e24094dc4b9a0b658f9dd41 = L.marker(
+                [45.085631074292856, 4.622740317133019],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_a09183e55b9ac3efff38ce5f3ef8db27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b53d27c02e24094dc4b9a0b658f9dd41.setIcon(icon_a09183e55b9ac3efff38ce5f3ef8db27);
+        
+    
+        var popup_57a7b28c23458be680b023ba62fbe26b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3854063970f257f1f8d672be42e28338 = $(`<div id="html_3854063970f257f1f8d672be42e28338" style="width: 100.0%; height: 100.0%;">Cyclosportive - L'ARDÉCHOISE ULTRA - 16/06/2023</div>`)[0];
+                popup_57a7b28c23458be680b023ba62fbe26b.setContent(html_3854063970f257f1f8d672be42e28338);
+            
+        
+
+        marker_b53d27c02e24094dc4b9a0b658f9dd41.bindPopup(popup_57a7b28c23458be680b023ba62fbe26b)
+        ;
+
+        
+    
+    
+            var marker_af512d9a6eeadb77d766a7c43f08f94d = L.marker(
+                [45.8580829507565, 6.618848230301046],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_a4b0a467403d295dcf2caf812d598432 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_af512d9a6eeadb77d766a7c43f08f94d.setIcon(icon_a4b0a467403d295dcf2caf812d598432);
+        
+    
+        var popup_a9efb0024e332fac3d88d2690785bd15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_106bb1af52b9be841f2bd491dbd2eb64 = $(`<div id="html_106bb1af52b9be841f2bd491dbd2eb64" style="width: 100.0%; height: 100.0%;">Cyclosportive - MEGEVE MONT BLANC CYCLING - 11/06/2023</div>`)[0];
+                popup_a9efb0024e332fac3d88d2690785bd15.setContent(html_106bb1af52b9be841f2bd491dbd2eb64);
+            
+        
+
+        marker_af512d9a6eeadb77d766a7c43f08f94d.bindPopup(popup_a9efb0024e332fac3d88d2690785bd15)
+        ;
+
+        
+    
+    
+            var marker_a6828ed2387be121f064cfa047f2e56d = L.marker(
+                [45.21729755806967, 6.471917859351497],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_b045b0ba1d214301dabcd1180a6a67b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a6828ed2387be121f064cfa047f2e56d.setIcon(icon_b045b0ba1d214301dabcd1180a6a67b3);
+        
+    
+        var popup_4bef5fadf23e11405f2af16f63650343 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61c9dc1ac11c79e44963b2a52c034714 = $(`<div id="html_61c9dc1ac11c79e44963b2a52c034714" style="width: 100.0%; height: 100.0%;">Cyclosportive - GALIBIER CHALLENGE - 04/06/2023</div>`)[0];
+                popup_4bef5fadf23e11405f2af16f63650343.setContent(html_61c9dc1ac11c79e44963b2a52c034714);
+            
+        
+
+        marker_a6828ed2387be121f064cfa047f2e56d.bindPopup(popup_4bef5fadf23e11405f2af16f63650343)
+        ;
+
+        
+    
+    
+            var marker_76bc3baba10de3ff8bd61b7801814483 = L.marker(
+                [46.03192793539432, 6.4168443152695405],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_0cff9adef049044c78e09c02a2cf9bdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_76bc3baba10de3ff8bd61b7801814483.setIcon(icon_0cff9adef049044c78e09c02a2cf9bdf);
+        
+    
+        var popup_4cf021bcfb705d83caa35252507d0729 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_199cd5b6aff6b2644429c22598ccae7a = $(`<div id="html_199cd5b6aff6b2644429c22598ccae7a" style="width: 100.0%; height: 100.0%;">Cyclosportive - LA FAUCIGNY-GLIERES - 04/06/2023</div>`)[0];
+                popup_4cf021bcfb705d83caa35252507d0729.setContent(html_199cd5b6aff6b2644429c22598ccae7a);
+            
+        
+
+        marker_76bc3baba10de3ff8bd61b7801814483.bindPopup(popup_4cf021bcfb705d83caa35252507d0729)
+        ;
+
+        
+    
+    
+            var marker_e0372fa5ceae69fc455e221d1f3b99dd = L.marker(
+                [45.07261389779795, 5.544917517266389],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_be87b2c4d712a0d4d9198d23c0016730 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e0372fa5ceae69fc455e221d1f3b99dd.setIcon(icon_be87b2c4d712a0d4d9198d23c0016730);
+        
+    
+        var popup_22d18a37bce7bfe1304ee742913a81c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18ea4f8bcf436bc0faf787d9472c6585 = $(`<div id="html_18ea4f8bcf436bc0faf787d9472c6585" style="width: 100.0%; height: 100.0%;">Cyclosportive - GFNY VILLARD DE LANS - 29/05/2023</div>`)[0];
+                popup_22d18a37bce7bfe1304ee742913a81c6.setContent(html_18ea4f8bcf436bc0faf787d9472c6585);
+            
+        
+
+        marker_e0372fa5ceae69fc455e221d1f3b99dd.bindPopup(popup_22d18a37bce7bfe1304ee742913a81c6)
+        ;
+
+        
+    
+    
+            var marker_3fefadf974cd24e9e42862b918958962 = L.marker(
+                [46.39360249514368, 6.598884995315148],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_d641cbc76dec4f7a1c174d52fb0b18e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3fefadf974cd24e9e42862b918958962.setIcon(icon_d641cbc76dec4f7a1c174d52fb0b18e8);
+        
+    
+        var popup_4b8ac4b20233dbe174deb0f57d8a99b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5cda5f771786fc01357a8da145435d6 = $(`<div id="html_c5cda5f771786fc01357a8da145435d6" style="width: 100.0%; height: 100.0%;">Cyclosportive - CYCLOTOUR DU LEMAN - 21/05/2023</div>`)[0];
+                popup_4b8ac4b20233dbe174deb0f57d8a99b4.setContent(html_c5cda5f771786fc01357a8da145435d6);
+            
+        
+
+        marker_3fefadf974cd24e9e42862b918958962.bindPopup(popup_4b8ac4b20233dbe174deb0f57d8a99b4)
+        ;
+
+        
+    
+    
+            var marker_88055f8463da0da4eae141f63292c36c = L.marker(
+                [45.8203407407487, 4.713070068798339],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_e9342b4dce292daad7f8a8882772c9cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_88055f8463da0da4eae141f63292c36c.setIcon(icon_e9342b4dce292daad7f8a8882772c9cb);
+        
+    
+        var popup_f22cbcb73ee7596ab2379198d64b5646 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc2693933fd6c942beaf21574e663a8e = $(`<div id="html_dc2693933fd6c942beaf21574e663a8e" style="width: 100.0%; height: 100.0%;">Cyclosportive - LES TROIS COLS MATERIEL-VELO.COM  - 18/05/2023</div>`)[0];
+                popup_f22cbcb73ee7596ab2379198d64b5646.setContent(html_dc2693933fd6c942beaf21574e663a8e);
+            
+        
+
+        marker_88055f8463da0da4eae141f63292c36c.bindPopup(popup_f22cbcb73ee7596ab2379198d64b5646)
+        ;
+
+        
+    
+    
+            var marker_9c88ee471b58b5490d4696716f5d4f39 = L.marker(
+                [46.367109013074455, 6.47469877562717],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_c8f891d802bd918405461c37d0f9f92b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9c88ee471b58b5490d4696716f5d4f39.setIcon(icon_c8f891d802bd918405461c37d0f9f92b);
+        
+    
+        var popup_0df9f93bac0a3ff58300864b4412213e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e8b0c92c329da3931c96d74152f446f = $(`<div id="html_1e8b0c92c329da3931c96d74152f446f" style="width: 100.0%; height: 100.0%;">Cyclosportive - LA THONON LES BAINS  CYCLING RACE - 14/05/2023</div>`)[0];
+                popup_0df9f93bac0a3ff58300864b4412213e.setContent(html_1e8b0c92c329da3931c96d74152f446f);
+            
+        
+
+        marker_9c88ee471b58b5490d4696716f5d4f39.bindPopup(popup_0df9f93bac0a3ff58300864b4412213e)
+        ;
+
+        
+    
+    
+            var marker_50a36ae40a7ec28cbdd8e65de70eb5f9 = L.marker(
+                [44.54868139576614, 4.753245831535705],
+                {}
+            ).addTo(feature_group_8e618cc9b5652f40a4184c869c44c16f);
+        
+    
+            var icon_9428fa76f6643d8b672d35c84e53096e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_50a36ae40a7ec28cbdd8e65de70eb5f9.setIcon(icon_9428fa76f6643d8b672d35c84e53096e);
+        
+    
+        var popup_6d48feb0dfb6b8dd28879d642ab53607 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4a411118dfeff09156ee07bec9b86f5 = $(`<div id="html_e4a411118dfeff09156ee07bec9b86f5" style="width: 100.0%; height: 100.0%;">Cyclosportive - LA CORIMA DROME PROVENCALE - 26/03/2023</div>`)[0];
+                popup_6d48feb0dfb6b8dd28879d642ab53607.setContent(html_e4a411118dfeff09156ee07bec9b86f5);
+            
+        
+
+        marker_50a36ae40a7ec28cbdd8e65de70eb5f9.bindPopup(popup_6d48feb0dfb6b8dd28879d642ab53607)
+        ;
+
+        
+    
+    
+            var tile_layer_5007e4f15b7f31603ce3d9926629ef10 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dbb5255598866b2eec2aa86289a3a263);
+        
+    
+            var tile_layer_13550652623bc7572edae2ab63448427 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dbb5255598866b2eec2aa86289a3a263);
+        
+    
+            var layer_control_8bfbb6d9d61eb7f41652a9a8112090b5 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_5007e4f15b7f31603ce3d9926629ef10,
+                    "stamenterrain" : tile_layer_13550652623bc7572edae2ab63448427,
+                },
+                overlays :  {
+                    "Access" : feature_group_f310906ee39be8e9793e928af493727d,
+                    "Gentlemen" : feature_group_596217fdfac4c2b5861e1fa50432021b,
+                    "Grimp\u00e9e" : feature_group_97560fc49f4893c0baa88d0b9170c4fe,
+                    "Test chronom\u00e9tr\u00e9" : feature_group_090064b332d526f7de6533a699e63d79,
+                    "Cyclosportive" : feature_group_8e618cc9b5652f40a4184c869c44c16f,
+                },
+            };
+            L.control.layers(
+                layer_control_8bfbb6d9d61eb7f41652a9a8112090b5.base_layers,
+                layer_control_8bfbb6d9d61eb7f41652a9a8112090b5.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_dbb5255598866b2eec2aa86289a3a263);
+            tile_layer_13550652623bc7572edae2ab63448427.remove();
+        
+</script>
+</html>
