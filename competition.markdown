@@ -35,8 +35,7 @@ Vous pouvez trouver sur cette page la listes des courses de la région Auvergne 
 # test
 <iframe src="/Calendrier_courses/map_courses_January.html" width="900" height="600"></iframe>
 
-add a button to extend the iframe
-<button onclick="changeMap()">Change map</button>
+
 
 add a function to change the iframe
 <script>
@@ -58,7 +57,7 @@ add a function to change the iframe
 
     }
 </script>
-
+<button onclick="changeMap()">Change map</button>
 
 <script>
     var monthNames = ["January", "February", "March", "April", "May", "June",
