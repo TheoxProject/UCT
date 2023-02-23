@@ -34,17 +34,24 @@ Vous pouvez trouver sur cette page la listes des courses de la région Auvergne 
 <iframe src="/Calendrier_courses/map_courses.html" width="900" height="600"></iframe>
 
 # test
-    
-```html
-<html>
-  <head>
-  </head>
-</html>
-```
+ load the date
+<script>
+    var monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+
+    var d = new Date();
+    document.write("The current month is " + monthNames[d.getMonth()]);
+</script>
+
 
 # print the current date
 add a javascript code block to print the current date
 ```javascript
 document.write(Date());
 ```
+
+load the map from a file
+"/Calendrier_courses/map_courses.html"
+<iframe src=path width="900" height="600"></iframe>
 
