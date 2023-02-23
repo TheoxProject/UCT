@@ -35,14 +35,16 @@ Vous pouvez trouver sur cette page la listes des courses de la région Auvergne 
 
 # test
     
-    ```python
-    def test():
-        print("test")
-    ```
+```html
+<html>
+  <head>
+  </head>
+</html>
+```
 
 # print the current date
-    
-        ```python
-        import datetime
-        print(datetime.datetime.now())
-        ```
+add a javascript code block to print the current date
+```javascript
+document.write(Date());
+```
+
