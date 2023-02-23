@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a6db92d1b06e43c4fa117194a70b9a3e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+                    <div style="position: fixed;
+                                background-color:white; opacity:0.75;
+                                bottom: 20px; right: 20px; width: 180px; height: 200px;
+                                border:2px solid grey; z-index:9999; font-size:14px;
+                                ">&nbsp; <b>Légende :</b> <br>
+                                    &nbsp; Gentlemen &nbsp; <i class="fa fa-bicycle fa-2x" style="color:blue"></i><br>
+                                    &nbsp; Grimpée &nbsp; <i class="fa fa-bicycle fa-2x" style="color:green"></i><br>
+                                    &nbsp; Test chronométré &nbsp; <i class="fa fa-bicycle fa-2x" style="color:orange"></i><br>
+                                    &nbsp; Access &nbsp; <i class="fa fa-bicycle fa-2x" style="color:purple"></i><br>
+                                    &nbsp; Cyclosportive &nbsp; <i class="fa fa-bicycle fa-2x" style="color:red"></i>
+                    </div>
+                    
+    
+            <div class="folium-map" id="map_a6db92d1b06e43c4fa117194a70b9a3e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a6db92d1b06e43c4fa117194a70b9a3e = L.map(
+                "map_a6db92d1b06e43c4fa117194a70b9a3e",
+                {
+                    center: [46.0, 6.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c78481427d4ccd7f0337f5d96d143742 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a6db92d1b06e43c4fa117194a70b9a3e);
+        
+    
+            var feature_group_eb780e50a4e215d904cf7af5e07ffef2 = L.featureGroup(
+                {}
+            ).addTo(map_a6db92d1b06e43c4fa117194a70b9a3e);
+        
+    
+            var marker_75e0c9cd5b682b28b46eedd4f9bbc188 = L.marker(
+                [46.04840384798124, 6.551277661439777],
+                {}
+            ).addTo(feature_group_eb780e50a4e215d904cf7af5e07ffef2);
+        
+    
+            var icon_2075ab2cfec3983f4db269e5bb4aa8c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_75e0c9cd5b682b28b46eedd4f9bbc188.setIcon(icon_2075ab2cfec3983f4db269e5bb4aa8c1);
+        
+    
+        var popup_75712384ccb68200f9ec8fe997d63ce2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfbf220507f13e488dd7f2ef24cff322 = $(`<div id="html_bfbf220507f13e488dd7f2ef24cff322" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DU PRINTEMPS - 23/04/2023</div>`)[0];
+                popup_75712384ccb68200f9ec8fe997d63ce2.setContent(html_bfbf220507f13e488dd7f2ef24cff322);
+            
+        
+
+        marker_75e0c9cd5b682b28b46eedd4f9bbc188.bindPopup(popup_75712384ccb68200f9ec8fe997d63ce2)
+        ;
+
+        
+    
+    
+            var marker_f1ebb517e0acf373daeeae10342b5f1e = L.marker(
+                [45.935870656353174, 6.174634908239193],
+                {}
+            ).addTo(feature_group_eb780e50a4e215d904cf7af5e07ffef2);
+        
+    
+            var icon_1a5a53d2382f236eb7705ec761627504 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_f1ebb517e0acf373daeeae10342b5f1e.setIcon(icon_1a5a53d2382f236eb7705ec761627504);
+        
+    
+        var popup_837be1d4c863188539270b1dfe12f315 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae6f839d11ae3315306676efef760f06 = $(`<div id="html_ae6f839d11ae3315306676efef760f06" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DES GLAISINS - 16/04/2023</div>`)[0];
+                popup_837be1d4c863188539270b1dfe12f315.setContent(html_ae6f839d11ae3315306676efef760f06);
+            
+        
+
+        marker_f1ebb517e0acf373daeeae10342b5f1e.bindPopup(popup_837be1d4c863188539270b1dfe12f315)
+        ;
+
+        
+    
+    
+            var marker_330995db74f52091dc22716b7f840ca4 = L.marker(
+                [45.988237496114806, 5.277115970849708],
+                {}
+            ).addTo(feature_group_eb780e50a4e215d904cf7af5e07ffef2);
+        
+    
+            var icon_167cacb37210828c4d5ec4f2402aee82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_330995db74f52091dc22716b7f840ca4.setIcon(icon_167cacb37210828c4d5ec4f2402aee82);
+        
+    
+        var popup_8cd2252119b0437bb7f439aace2fcc0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77cae2ddd11c5e551c5dd850fc4a0a3c = $(`<div id="html_77cae2ddd11c5e551c5dd850fc4a0a3c" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX CYCLISTE SOUVENIR JEAN CLAPISSON - 10/04/2023</div>`)[0];
+                popup_8cd2252119b0437bb7f439aace2fcc0d.setContent(html_77cae2ddd11c5e551c5dd850fc4a0a3c);
+            
+        
+
+        marker_330995db74f52091dc22716b7f840ca4.bindPopup(popup_8cd2252119b0437bb7f439aace2fcc0d)
+        ;
+
+        
+    
+    
+            var marker_f8a0a018ddc4d1a1d9f68292547b6637 = L.marker(
+                [46.08361643929172, 5.370976939747046],
+                {}
+            ).addTo(feature_group_eb780e50a4e215d904cf7af5e07ffef2);
+        
+    
+            var icon_a0f40180992684026bb90d6c02122019 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_f8a0a018ddc4d1a1d9f68292547b6637.setIcon(icon_a0f40180992684026bb90d6c02122019);
+        
+    
+        var popup_028f87b285f00c6d094902a29cfab511 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_644e4487b3c6be1e4f2f5c0e8efd77e7 = $(`<div id="html_644e4487b3c6be1e4f2f5c0e8efd77e7" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DE NEUVILLE SUR AIN - 02/04/2023</div>`)[0];
+                popup_028f87b285f00c6d094902a29cfab511.setContent(html_644e4487b3c6be1e4f2f5c0e8efd77e7);
+            
+        
+
+        marker_f8a0a018ddc4d1a1d9f68292547b6637.bindPopup(popup_028f87b285f00c6d094902a29cfab511)
+        ;
+
+        
+    
+    
+            var feature_group_20c9aedc66957aa1d1eda8ce85b55fe2 = L.featureGroup(
+                {}
+            ).addTo(map_a6db92d1b06e43c4fa117194a70b9a3e);
+        
+    
+            var feature_group_9563edd0e324b1271d6aad2a5444b5e1 = L.featureGroup(
+                {}
+            ).addTo(map_a6db92d1b06e43c4fa117194a70b9a3e);
+        
+    
+            var marker_2b51a941c286d8e93a3d008b30a6a18c = L.marker(
+                [44.95895362985075, 2.1847548875787663],
+                {}
+            ).addTo(feature_group_9563edd0e324b1271d6aad2a5444b5e1);
+        
+    
+            var icon_9d72bc43f89f8dd14f87b31e2c32b455 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2b51a941c286d8e93a3d008b30a6a18c.setIcon(icon_9d72bc43f89f8dd14f87b31e2c32b455);
+        
+    
+        var popup_034baee00f8713bf6d55e18c0089d656 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1640b2c4e4947acb245e40e70bc15590 = $(`<div id="html_1640b2c4e4947acb245e40e70bc15590" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - MONTEE CHRONOMETREE DE SIRAN - 23/04/2023</div>`)[0];
+                popup_034baee00f8713bf6d55e18c0089d656.setContent(html_1640b2c4e4947acb245e40e70bc15590);
+            
+        
+
+        marker_2b51a941c286d8e93a3d008b30a6a18c.bindPopup(popup_034baee00f8713bf6d55e18c0089d656)
+        ;
+
+        
+    
+    
+            var feature_group_e5e25971b441e83076d89de370139a6e = L.featureGroup(
+                {}
+            ).addTo(map_a6db92d1b06e43c4fa117194a70b9a3e);
+        
+    
+            var marker_5ebe95190af3bdee83950486d932354f = L.marker(
+                [45.92352620458509, 3.0586748435622284],
+                {}
+            ).addTo(feature_group_e5e25971b441e83076d89de370139a6e);
+        
+    
+            var icon_c8c084cc032c46e366bc67ac3e82e27e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5ebe95190af3bdee83950486d932354f.setIcon(icon_c8c084cc032c46e366bc67ac3e82e27e);
+        
+    
+        var popup_53ab99eea325f7f83b9a06eeac67fe0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a07172dabeab48f2f489d6c62fc8a2d0 = $(`<div id="html_a07172dabeab48f2f489d6c62fc8a2d0" style="width: 100.0%; height: 100.0%;">Test chronométré - CHAMPIONNATS AUVERGNE-RHÔNE-ALPES ROUTE CLM PAR EQUIPE - 15/04/2023</div>`)[0];
+                popup_53ab99eea325f7f83b9a06eeac67fe0b.setContent(html_a07172dabeab48f2f489d6c62fc8a2d0);
+            
+        
+
+        marker_5ebe95190af3bdee83950486d932354f.bindPopup(popup_53ab99eea325f7f83b9a06eeac67fe0b)
+        ;
+
+        
+    
+    
+            var feature_group_ca0a0556804b5708aa4e346e7068bd0e = L.featureGroup(
+                {}
+            ).addTo(map_a6db92d1b06e43c4fa117194a70b9a3e);
+        
+    
+            var tile_layer_5c67ca0d0a054e9c3b432d7a65b14444 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a6db92d1b06e43c4fa117194a70b9a3e);
+        
+    
+            var tile_layer_4e3b4d63eda5cc53bf2b66be04abe89e = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a6db92d1b06e43c4fa117194a70b9a3e);
+        
+    
+            var layer_control_2bae9bf85e4cff998a176e089e2b38bf = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_5c67ca0d0a054e9c3b432d7a65b14444,
+                    "stamenterrain" : tile_layer_4e3b4d63eda5cc53bf2b66be04abe89e,
+                },
+                overlays :  {
+                    "Access" : feature_group_eb780e50a4e215d904cf7af5e07ffef2,
+                    "Gentlemen" : feature_group_20c9aedc66957aa1d1eda8ce85b55fe2,
+                    "Grimp\u00e9e" : feature_group_9563edd0e324b1271d6aad2a5444b5e1,
+                    "Test chronom\u00e9tr\u00e9" : feature_group_e5e25971b441e83076d89de370139a6e,
+                    "Cyclosportive" : feature_group_ca0a0556804b5708aa4e346e7068bd0e,
+                },
+            };
+            L.control.layers(
+                layer_control_2bae9bf85e4cff998a176e089e2b38bf.base_layers,
+                layer_control_2bae9bf85e4cff998a176e089e2b38bf.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a6db92d1b06e43c4fa117194a70b9a3e);
+            tile_layer_4e3b4d63eda5cc53bf2b66be04abe89e.remove();
+        
+</script>
+</html>

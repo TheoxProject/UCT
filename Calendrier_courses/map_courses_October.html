@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b38f44f25024bb52bd3dc3e7ec2d1dec {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+                    <div style="position: fixed;
+                                background-color:white; opacity:0.75;
+                                bottom: 20px; right: 20px; width: 180px; height: 200px;
+                                border:2px solid grey; z-index:9999; font-size:14px;
+                                ">&nbsp; <b>Légende :</b> <br>
+                                    &nbsp; Gentlemen &nbsp; <i class="fa fa-bicycle fa-2x" style="color:blue"></i><br>
+                                    &nbsp; Grimpée &nbsp; <i class="fa fa-bicycle fa-2x" style="color:green"></i><br>
+                                    &nbsp; Test chronométré &nbsp; <i class="fa fa-bicycle fa-2x" style="color:orange"></i><br>
+                                    &nbsp; Access &nbsp; <i class="fa fa-bicycle fa-2x" style="color:purple"></i><br>
+                                    &nbsp; Cyclosportive &nbsp; <i class="fa fa-bicycle fa-2x" style="color:red"></i>
+                    </div>
+                    
+    
+            <div class="folium-map" id="map_b38f44f25024bb52bd3dc3e7ec2d1dec" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b38f44f25024bb52bd3dc3e7ec2d1dec = L.map(
+                "map_b38f44f25024bb52bd3dc3e7ec2d1dec",
+                {
+                    center: [46.0, 6.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_813d17dcadc132adf032f167ff2f3737 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b38f44f25024bb52bd3dc3e7ec2d1dec);
+        
+    
+            var feature_group_23cc9d925d52979978c98ce62f472f69 = L.featureGroup(
+                {}
+            ).addTo(map_b38f44f25024bb52bd3dc3e7ec2d1dec);
+        
+    
+            var marker_1b7a63e132d1835f372df1423e3ff7a3 = L.marker(
+                [46.195927780800716, 5.16196064159013],
+                {}
+            ).addTo(feature_group_23cc9d925d52979978c98ce62f472f69);
+        
+    
+            var icon_282e6923345beb6c9448c7832264e47a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_1b7a63e132d1835f372df1423e3ff7a3.setIcon(icon_282e6923345beb6c9448c7832264e47a);
+        
+    
+        var popup_5ad949726220a04eecc8815208dd5340 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0febc262ff2b2567859bf90ca29cc2c = $(`<div id="html_a0febc262ff2b2567859bf90ca29cc2c" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DE SAINT REMY - 01/10/2023</div>`)[0];
+                popup_5ad949726220a04eecc8815208dd5340.setContent(html_a0febc262ff2b2567859bf90ca29cc2c);
+            
+        
+
+        marker_1b7a63e132d1835f372df1423e3ff7a3.bindPopup(popup_5ad949726220a04eecc8815208dd5340)
+        ;
+
+        
+    
+    
+            var marker_bdbeda9b2b1fcbcf2fd0919720de9e0e = L.marker(
+                [46.05959607129733, 6.363949117773067],
+                {}
+            ).addTo(feature_group_23cc9d925d52979978c98ce62f472f69);
+        
+    
+            var icon_4472f21808ea690e9c92ffaca22d4ca5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_bdbeda9b2b1fcbcf2fd0919720de9e0e.setIcon(icon_4472f21808ea690e9c92ffaca22d4ca5);
+        
+    
+        var popup_5070d9861f926ef1dbaa093f857a5a57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3bf63c1888480631aed743aec5e6b3a = $(`<div id="html_c3bf63c1888480631aed743aec5e6b3a" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE SAINT PIERRE EN FAUCIGNY - 01/10/2023</div>`)[0];
+                popup_5070d9861f926ef1dbaa093f857a5a57.setContent(html_c3bf63c1888480631aed743aec5e6b3a);
+            
+        
+
+        marker_bdbeda9b2b1fcbcf2fd0919720de9e0e.bindPopup(popup_5070d9861f926ef1dbaa093f857a5a57)
+        ;
+
+        
+    
+    
+            var feature_group_74c93a82cf6821d2a70a4bf310f037fa = L.featureGroup(
+                {}
+            ).addTo(map_b38f44f25024bb52bd3dc3e7ec2d1dec);
+        
+    
+            var marker_73057d151bcaf57b78d0bc7c29d2ea40 = L.marker(
+                [46.10896582963418, 6.315315909253359],
+                {}
+            ).addTo(feature_group_74c93a82cf6821d2a70a4bf310f037fa);
+        
+    
+            var icon_27ea0bbffb2e8297eb2de44b9acb5b21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_73057d151bcaf57b78d0bc7c29d2ea40.setIcon(icon_27ea0bbffb2e8297eb2de44b9acb5b21);
+        
+    
+        var popup_8a5ac462a403e40cd07aa83dd5d50cf8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2fc7f64fa8d7b738a1bc4410e37c3f68 = $(`<div id="html_2fc7f64fa8d7b738a1bc4410e37c3f68" style="width: 100.0%; height: 100.0%;">Gentlemen - GENTLEMAN DE SCIENTRIER - 15/10/2023</div>`)[0];
+                popup_8a5ac462a403e40cd07aa83dd5d50cf8.setContent(html_2fc7f64fa8d7b738a1bc4410e37c3f68);
+            
+        
+
+        marker_73057d151bcaf57b78d0bc7c29d2ea40.bindPopup(popup_8a5ac462a403e40cd07aa83dd5d50cf8)
+        ;
+
+        
+    
+    
+            var marker_bafaffde1d6c24a149b070d4ba50a99a = L.marker(
+                [45.99725197209422, 4.701896703828095],
+                {}
+            ).addTo(feature_group_74c93a82cf6821d2a70a4bf310f037fa);
+        
+    
+            var icon_22f86991e263e0e13851b9a9b747e217 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bafaffde1d6c24a149b070d4ba50a99a.setIcon(icon_22f86991e263e0e13851b9a9b747e217);
+        
+    
+        var popup_9c491c93bc73362f84d22cf013084a30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d50d4886c25748e75fcf37cc64d84d3 = $(`<div id="html_2d50d4886c25748e75fcf37cc64d84d3" style="width: 100.0%; height: 100.0%;">Gentlemen - GENTLEMAN CALADOIS - 14/10/2023</div>`)[0];
+                popup_9c491c93bc73362f84d22cf013084a30.setContent(html_2d50d4886c25748e75fcf37cc64d84d3);
+            
+        
+
+        marker_bafaffde1d6c24a149b070d4ba50a99a.bindPopup(popup_9c491c93bc73362f84d22cf013084a30)
+        ;
+
+        
+    
+    
+            var marker_e276a16d3b026cf9c2648a36560d3584 = L.marker(
+                [46.10577861780073, 4.73344492193371],
+                {}
+            ).addTo(feature_group_74c93a82cf6821d2a70a4bf310f037fa);
+        
+    
+            var icon_fc45c61fa3850cbc85f83a0d85b1c1b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e276a16d3b026cf9c2648a36560d3584.setIcon(icon_fc45c61fa3850cbc85f83a0d85b1c1b8);
+        
+    
+        var popup_ff66d9bacbd4a528b8ec07bb4e7a8f4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c453ca5930a64d4174a568dced4e570 = $(`<div id="html_4c453ca5930a64d4174a568dced4e570" style="width: 100.0%; height: 100.0%;">Gentlemen - GENTLEMEN DE TAPONAS - 07/10/2023</div>`)[0];
+                popup_ff66d9bacbd4a528b8ec07bb4e7a8f4f.setContent(html_4c453ca5930a64d4174a568dced4e570);
+            
+        
+
+        marker_e276a16d3b026cf9c2648a36560d3584.bindPopup(popup_ff66d9bacbd4a528b8ec07bb4e7a8f4f)
+        ;
+
+        
+    
+    
+            var feature_group_2537ba9833be0cd799a3ff4d69145c7d = L.featureGroup(
+                {}
+            ).addTo(map_b38f44f25024bb52bd3dc3e7ec2d1dec);
+        
+    
+            var marker_caf1330431be47e22e6ab90ee3b5aad3 = L.marker(
+                [45.14395822444831, 3.400528609381689],
+                {}
+            ).addTo(feature_group_2537ba9833be0cd799a3ff4d69145c7d);
+        
+    
+            var icon_eeb3e26b2b8a821649677bf22e025709 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_caf1330431be47e22e6ab90ee3b5aad3.setIcon(icon_eeb3e26b2b8a821649677bf22e025709);
+        
+    
+        var popup_d7d75cada54770acf788c56a64be0c43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87c97a06c9650418fab96cf97b3b9fab = $(`<div id="html_87c97a06c9650418fab96cf97b3b9fab" style="width: 100.0%; height: 100.0%;">Grimpée chronométrée - TROPHEE DES GRIMPEURS LA CLAUDE SEGUY - 14/10/2023</div>`)[0];
+                popup_d7d75cada54770acf788c56a64be0c43.setContent(html_87c97a06c9650418fab96cf97b3b9fab);
+            
+        
+
+        marker_caf1330431be47e22e6ab90ee3b5aad3.bindPopup(popup_d7d75cada54770acf788c56a64be0c43)
+        ;
+
+        
+    
+    
+            var feature_group_761c20c1aa0ef9c94e9d03a2bd84d6bb = L.featureGroup(
+                {}
+            ).addTo(map_b38f44f25024bb52bd3dc3e7ec2d1dec);
+        
+    
+            var marker_00c12728283f57747930536aee1a4f4d = L.marker(
+                [45.690133427921516, 5.052530080134393],
+                {}
+            ).addTo(feature_group_761c20c1aa0ef9c94e9d03a2bd84d6bb);
+        
+    
+            var icon_b79fb0c7e34273115b23eade749d0f8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_00c12728283f57747930536aee1a4f4d.setIcon(icon_b79fb0c7e34273115b23eade749d0f8f);
+        
+    
+        var popup_e8924ba4caf5bfeea5255e86e7ae5224 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55c7c8a36de969178e416deb461194e8 = $(`<div id="html_55c7c8a36de969178e416deb461194e8" style="width: 100.0%; height: 100.0%;">Test chronométré - CHALLENGE DES MURES - 14/10/2023</div>`)[0];
+                popup_e8924ba4caf5bfeea5255e86e7ae5224.setContent(html_55c7c8a36de969178e416deb461194e8);
+            
+        
+
+        marker_00c12728283f57747930536aee1a4f4d.bindPopup(popup_e8924ba4caf5bfeea5255e86e7ae5224)
+        ;
+
+        
+    
+    
+            var feature_group_2af2b46a7eeec2ba587ad78d2b306ee7 = L.featureGroup(
+                {}
+            ).addTo(map_b38f44f25024bb52bd3dc3e7ec2d1dec);
+        
+    
+            var marker_6f63364a3e1e941906901d18bed0f4e1 = L.marker(
+                [45.83445021304133, 5.292221235020918],
+                {}
+            ).addTo(feature_group_2af2b46a7eeec2ba587ad78d2b306ee7);
+        
+    
+            var icon_bf3681a85e1677ac4350d8d8b9fa4e92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6f63364a3e1e941906901d18bed0f4e1.setIcon(icon_bf3681a85e1677ac4350d8d8b9fa4e92);
+        
+    
+        var popup_96331ba97d1df4f23207b70f4e9c7fac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_358b18da62299da4d2ad7cd7b20e1df0 = $(`<div id="html_358b18da62299da4d2ad7cd7b20e1df0" style="width: 100.0%; height: 100.0%;">Cyclosportive - CYCLO LES HÉROS - 08/10/2023</div>`)[0];
+                popup_96331ba97d1df4f23207b70f4e9c7fac.setContent(html_358b18da62299da4d2ad7cd7b20e1df0);
+            
+        
+
+        marker_6f63364a3e1e941906901d18bed0f4e1.bindPopup(popup_96331ba97d1df4f23207b70f4e9c7fac)
+        ;
+
+        
+    
+    
+            var tile_layer_7f8cff66c3347df9d93582816ca22463 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b38f44f25024bb52bd3dc3e7ec2d1dec);
+        
+    
+            var tile_layer_40e01bd2b9a3c9ecddd322a029ca9dff = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b38f44f25024bb52bd3dc3e7ec2d1dec);
+        
+    
+            var layer_control_f952a02f118f4fe57a55cfdfcc4acd6a = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_7f8cff66c3347df9d93582816ca22463,
+                    "stamenterrain" : tile_layer_40e01bd2b9a3c9ecddd322a029ca9dff,
+                },
+                overlays :  {
+                    "Access" : feature_group_23cc9d925d52979978c98ce62f472f69,
+                    "Gentlemen" : feature_group_74c93a82cf6821d2a70a4bf310f037fa,
+                    "Grimp\u00e9e" : feature_group_2537ba9833be0cd799a3ff4d69145c7d,
+                    "Test chronom\u00e9tr\u00e9" : feature_group_761c20c1aa0ef9c94e9d03a2bd84d6bb,
+                    "Cyclosportive" : feature_group_2af2b46a7eeec2ba587ad78d2b306ee7,
+                },
+            };
+            L.control.layers(
+                layer_control_f952a02f118f4fe57a55cfdfcc4acd6a.base_layers,
+                layer_control_f952a02f118f4fe57a55cfdfcc4acd6a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b38f44f25024bb52bd3dc3e7ec2d1dec);
+            tile_layer_40e01bd2b9a3c9ecddd322a029ca9dff.remove();
+        
+</script>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ea2cd9f416853338f77b6f4d48242f31 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+                    <div style="position: fixed;
+                                background-color:white; opacity:0.75;
+                                bottom: 20px; right: 20px; width: 180px; height: 200px;
+                                border:2px solid grey; z-index:9999; font-size:14px;
+                                ">&nbsp; <b>Légende :</b> <br>
+                                    &nbsp; Gentlemen &nbsp; <i class="fa fa-bicycle fa-2x" style="color:blue"></i><br>
+                                    &nbsp; Grimpée &nbsp; <i class="fa fa-bicycle fa-2x" style="color:green"></i><br>
+                                    &nbsp; Test chronométré &nbsp; <i class="fa fa-bicycle fa-2x" style="color:orange"></i><br>
+                                    &nbsp; Access &nbsp; <i class="fa fa-bicycle fa-2x" style="color:purple"></i><br>
+                                    &nbsp; Cyclosportive &nbsp; <i class="fa fa-bicycle fa-2x" style="color:red"></i>
+                    </div>
+                    
+    
+            <div class="folium-map" id="map_ea2cd9f416853338f77b6f4d48242f31" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ea2cd9f416853338f77b6f4d48242f31 = L.map(
+                "map_ea2cd9f416853338f77b6f4d48242f31",
+                {
+                    center: [46.0, 6.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_326602fd87ae7326acc274e7e46db0d0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ea2cd9f416853338f77b6f4d48242f31);
+        
+    
+            var feature_group_d1a0ea26694facc129661c219e94c510 = L.featureGroup(
+                {}
+            ).addTo(map_ea2cd9f416853338f77b6f4d48242f31);
+        
+    
+            var marker_bcbbb08043b6333ee0759035159bca5c = L.marker(
+                [45.51119499729377, 4.935720768243764],
+                {}
+            ).addTo(feature_group_d1a0ea26694facc129661c219e94c510);
+        
+    
+            var icon_fff6b7de2a4e37f8d675b33197b798c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_bcbbb08043b6333ee0759035159bca5c.setIcon(icon_fff6b7de2a4e37f8d675b33197b798c2);
+        
+    
+        var popup_2afa7daec11f23dc471636a7a7772fa1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09196c6a17f6e39c9a4911519acc1143 = $(`<div id="html_09196c6a17f6e39c9a4911519acc1143" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX DE VIENNE - 26/03/2023</div>`)[0];
+                popup_2afa7daec11f23dc471636a7a7772fa1.setContent(html_09196c6a17f6e39c9a4911519acc1143);
+            
+        
+
+        marker_bcbbb08043b6333ee0759035159bca5c.bindPopup(popup_2afa7daec11f23dc471636a7a7772fa1)
+        ;
+
+        
+    
+    
+            var marker_b1e82ff2fa0853c6f29b157d6b87baf8 = L.marker(
+                [45.468718616790746, 4.513876785743503],
+                {}
+            ).addTo(feature_group_d1a0ea26694facc129661c219e94c510);
+        
+    
+            var icon_f68b6f419ad5daa9c10cabc5177a8f09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_b1e82ff2fa0853c6f29b157d6b87baf8.setIcon(icon_f68b6f419ad5daa9c10cabc5177a8f09);
+        
+    
+        var popup_3b33492af100431fc264caabbc90d806 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_913e55e215287247b2b2e0875b5f5328 = $(`<div id="html_913e55e215287247b2b2e0875b5f5328" style="width: 100.0%; height: 100.0%;">Access hommes - GRAND PRIX CYCLISAINTE DE SAINT CHAMOND - 26/03/2023</div>`)[0];
+                popup_3b33492af100431fc264caabbc90d806.setContent(html_913e55e215287247b2b2e0875b5f5328);
+            
+        
+
+        marker_b1e82ff2fa0853c6f29b157d6b87baf8.bindPopup(popup_3b33492af100431fc264caabbc90d806)
+        ;
+
+        
+    
+    
+            var marker_a44cdf1eafa7a4c66a6d76464b9b0c51 = L.marker(
+                [45.96052726851586, 5.281439613270216],
+                {}
+            ).addTo(feature_group_d1a0ea26694facc129661c219e94c510);
+        
+    
+            var icon_50fe6c7b18d0101ef75785bcae736437 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_a44cdf1eafa7a4c66a6d76464b9b0c51.setIcon(icon_50fe6c7b18d0101ef75785bcae736437);
+        
+    
+        var popup_82740b47c20f22b8583f435453445593 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40aaffcdab62e8abf58beecc2d60c801 = $(`<div id="html_40aaffcdab62e8abf58beecc2d60c801" style="width: 100.0%; height: 100.0%;">Access hommes - 2EME PRIX DE SAINT MAURICE DE SAINT REMENS  - 12/03/2023</div>`)[0];
+                popup_82740b47c20f22b8583f435453445593.setContent(html_40aaffcdab62e8abf58beecc2d60c801);
+            
+        
+
+        marker_a44cdf1eafa7a4c66a6d76464b9b0c51.bindPopup(popup_82740b47c20f22b8583f435453445593)
+        ;
+
+        
+    
+    
+            var marker_bdaf9d11edfa81ec23a7db7749e3fc0e = L.marker(
+                [46.12204338993755, 3.452870204541202],
+                {}
+            ).addTo(feature_group_d1a0ea26694facc129661c219e94c510);
+        
+    
+            var icon_d1030b9284f70529c20b847720495e0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_bdaf9d11edfa81ec23a7db7749e3fc0e.setIcon(icon_d1030b9284f70529c20b847720495e0b);
+        
+    
+        var popup_e8eb5a9e4eadd7e0bbb71c7ad279c17a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba0eb6dbb3ea1c3797917e134f32ee89 = $(`<div id="html_ba0eb6dbb3ea1c3797917e134f32ee89" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX DE LA ZONE INDUSTRIELLE DE CUSSET - 12/03/2023</div>`)[0];
+                popup_e8eb5a9e4eadd7e0bbb71c7ad279c17a.setContent(html_ba0eb6dbb3ea1c3797917e134f32ee89);
+            
+        
+
+        marker_bdaf9d11edfa81ec23a7db7749e3fc0e.bindPopup(popup_e8eb5a9e4eadd7e0bbb71c7ad279c17a)
+        ;
+
+        
+    
+    
+            var marker_bd7cba3a3138234487f3a93b674c0290 = L.marker(
+                [45.837598276080584, 4.53373082756079],
+                {}
+            ).addTo(feature_group_d1a0ea26694facc129661c219e94c510);
+        
+    
+            var icon_dffad71c86b9ee01770c7ab17d91adf1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_bd7cba3a3138234487f3a93b674c0290.setIcon(icon_dffad71c86b9ee01770c7ab17d91adf1);
+        
+    
+        var popup_777e1733473b23a7a8aa669e9f9ddf22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc49ab0cc7ae5e3a5de2fe085e5ac99a = $(`<div id="html_fc49ab0cc7ae5e3a5de2fe085e5ac99a" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX TARARE POPEY - 11/03/2023</div>`)[0];
+                popup_777e1733473b23a7a8aa669e9f9ddf22.setContent(html_fc49ab0cc7ae5e3a5de2fe085e5ac99a);
+            
+        
+
+        marker_bd7cba3a3138234487f3a93b674c0290.bindPopup(popup_777e1733473b23a7a8aa669e9f9ddf22)
+        ;
+
+        
+    
+    
+            var marker_7e3164becdbc5293d38dae798d1ad251 = L.marker(
+                [45.747870519847936, 3.189589472691771],
+                {}
+            ).addTo(feature_group_d1a0ea26694facc129661c219e94c510);
+        
+    
+            var icon_1315bf1b84d52ea9e10f27684ca3b8bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_7e3164becdbc5293d38dae798d1ad251.setIcon(icon_1315bf1b84d52ea9e10f27684ca3b8bf);
+        
+    
+        var popup_d53a625835f790053c43d16c3d13e224 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c692ea15435e7c966c9ffba6634dc942 = $(`<div id="html_c692ea15435e7c966c9ffba6634dc942" style="width: 100.0%; height: 100.0%;">Access hommes - PRIX AUTO PIECES AUVERGNE - 05/03/2023</div>`)[0];
+                popup_d53a625835f790053c43d16c3d13e224.setContent(html_c692ea15435e7c966c9ffba6634dc942);
+            
+        
+
+        marker_7e3164becdbc5293d38dae798d1ad251.bindPopup(popup_d53a625835f790053c43d16c3d13e224)
+        ;
+
+        
+    
+    
+            var feature_group_f121fb014f0532a7a8ab458d6932fffe = L.featureGroup(
+                {}
+            ).addTo(map_ea2cd9f416853338f77b6f4d48242f31);
+        
+    
+            var feature_group_e9792b571bd845f6f2f1c73939efcc13 = L.featureGroup(
+                {}
+            ).addTo(map_ea2cd9f416853338f77b6f4d48242f31);
+        
+    
+            var feature_group_2fafc776912f58d2e1993aa386858faa = L.featureGroup(
+                {}
+            ).addTo(map_ea2cd9f416853338f77b6f4d48242f31);
+        
+    
+            var feature_group_36f8196695503ed9725e083e902b2d85 = L.featureGroup(
+                {}
+            ).addTo(map_ea2cd9f416853338f77b6f4d48242f31);
+        
+    
+            var marker_5d92e923c0b4aa98071c5bbd4c66a352 = L.marker(
+                [44.56740776065417, 4.748075069499531],
+                {}
+            ).addTo(feature_group_36f8196695503ed9725e083e902b2d85);
+        
+    
+            var icon_137033d831ce8796d948be97800adc5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5d92e923c0b4aa98071c5bbd4c66a352.setIcon(icon_137033d831ce8796d948be97800adc5c);
+        
+    
+        var popup_9e06a73d19e7a8e529e29a7c677ddc4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0b88c2129a028b832fdad9b916d084b = $(`<div id="html_d0b88c2129a028b832fdad9b916d084b" style="width: 100.0%; height: 100.0%;">Cyclosportive - LA CORIMA DROME PROVENCALE - 26/03/2023</div>`)[0];
+                popup_9e06a73d19e7a8e529e29a7c677ddc4b.setContent(html_d0b88c2129a028b832fdad9b916d084b);
+            
+        
+
+        marker_5d92e923c0b4aa98071c5bbd4c66a352.bindPopup(popup_9e06a73d19e7a8e529e29a7c677ddc4b)
+        ;
+
+        
+    
+    
+            var tile_layer_e7a9e80aa53b2c610381132c7efca4e4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ea2cd9f416853338f77b6f4d48242f31);
+        
+    
+            var tile_layer_592c74ee4c3854eb911cac016b911890 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ea2cd9f416853338f77b6f4d48242f31);
+        
+    
+            var layer_control_9d6cf281aab635e12af855c6e1d2b6e8 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e7a9e80aa53b2c610381132c7efca4e4,
+                    "stamenterrain" : tile_layer_592c74ee4c3854eb911cac016b911890,
+                },
+                overlays :  {
+                    "Access" : feature_group_d1a0ea26694facc129661c219e94c510,
+                    "Gentlemen" : feature_group_f121fb014f0532a7a8ab458d6932fffe,
+                    "Grimp\u00e9e" : feature_group_e9792b571bd845f6f2f1c73939efcc13,
+                    "Test chronom\u00e9tr\u00e9" : feature_group_2fafc776912f58d2e1993aa386858faa,
+                    "Cyclosportive" : feature_group_36f8196695503ed9725e083e902b2d85,
+                },
+            };
+            L.control.layers(
+                layer_control_9d6cf281aab635e12af855c6e1d2b6e8.base_layers,
+                layer_control_9d6cf281aab635e12af855c6e1d2b6e8.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_ea2cd9f416853338f77b6f4d48242f31);
+            tile_layer_592c74ee4c3854eb911cac016b911890.remove();
+        
+</script>
+</html>
