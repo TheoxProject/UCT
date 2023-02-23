@@ -31,7 +31,6 @@ Vous pouvez trouver sur cette page la listes des courses de la région Auvergne 
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=12nUP1V9-5k9hE2ittGRuztd3uciBdTY&ehbc=2E312F" width="640" height="480"></iframe>
 
-<iframe src="/Calendrier_courses/map_courses.html" width="900" height="600"></iframe>
 
 # test
  load the date
@@ -42,16 +41,16 @@ Vous pouvez trouver sur cette page la listes des courses de la région Auvergne 
 
     var d = new Date();
     document.write("The current month is " + monthNames[d.getMonth()]);
+
+    create a new string with the date
+    var path = "/Calendrier_courses/map_courses_" + monthNames[d.getMonth()] + ".html";
+    <iframe src="'path'" width="900" height="600"></iframe>
+
+
+    load the iframe using the new path
+    document.getElementById("map").src = path;
+
+
 </script>
 
-
-# print the current date
-add a javascript code block to print the current date
-```javascript
-document.write(Date());
-```
-
-load the map from a file
-"/Calendrier_courses/map_courses.html"
-<iframe src=path width="900" height="600"></iframe>
 
