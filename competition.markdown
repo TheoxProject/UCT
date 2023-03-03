@@ -24,21 +24,43 @@ Vous pouvez trouver sur cette page la listes des courses de la région Auvergne 
 
 
 
-![image](/assets/img/under_construction.jpg)
 
 
 ## Carte des courses :
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=12nUP1V9-5k9hE2ittGRuztd3uciBdTY&ehbc=2E312F" width="640" height="480"></iframe>
-
 <iframe src="/Calendrier_courses/map_courses.html" width="900" height="600"></iframe>
 
 # Courses du mois en cours :
+
+# Mars :
 <iframe src="/Calendrier_courses/map_courses_March.html" width="900" height="600"></iframe>
 
+# Avril :
+<iframe src="/Calendrier_courses/map_courses_April.html" width="900" height="600"></iframe>
+
+# Mai :
+<iframe src="/Calendrier_courses/map_courses_May.html" width="900" height="600"></iframe>
+
+# Juin :
+<iframe src="/Calendrier_courses/map_courses_June.html" width="900" height="600"></iframe>
+
+# Juillet :
+<iframe src="/Calendrier_courses/map_courses_July.html" width="900" height="600"></iframe>
+
+# Août :
+<iframe src="/Calendrier_courses/map_courses_August.html" width="900" height="600"></iframe>
+
+# Septembre :
+<iframe src="/Calendrier_courses/map_courses_September.html" width="900" height="600"></iframe>
+
+# Octobre :
+<iframe src="/Calendrier_courses/map_courses_October.html" width="900" height="600"></iframe>
 
 
-add a function to change the iframe
+
+
+![image](/assets/img/under_construction.jpg)
+add a function to change the iframe depending of actual month
 <script>
     function changeMap() {
         var monthNames = ["January", "February", "March", "April", "May", "June",
@@ -59,3 +81,14 @@ add a function to change the iframe
     }
 </script>
 <button onclick="changeMap()">Change map</button>
+
+
+
+
+
+
+
+
+
+
+
