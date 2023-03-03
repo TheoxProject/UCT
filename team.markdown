@@ -26,18 +26,65 @@ accent_image: /assets/img/homePicture.jpg
   <div style="float: left;">
     <img src="/assets/img/men_face.jpg" alt="" style="float: right; margin-top: 1em;width:40%">
     <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Rudy</h2>
-    💪 Chef de meute
+    💪 Capitaine de route
   </div>
 </div>
 
 <div style="clear: both;">
   <div style="float: left;">
     <img src="/assets/img/men_face.jpg" alt="" style="float: left; margin-top: 1em;width:30%">
-    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Coureur</h2>
-    🌟
+    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Christian</h2>
+    💪
   </div>
 </div>
 
+<div style="clear: both;">
+  <div style="float: left;">
+    <img src="/assets/img/men_face.jpg" alt="" style="float: right; margin-top: 1em;width:30%">
+    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Yoann Perreux</h2>
+    💪
+  </div>
+</div>
+
+<div style="clear: both;">
+  <div style="float: left;">
+    <img src="/assets/img/men_face.jpg" alt="" style="float: left; margin-top: 1em;width:30%">
+    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Thibaut Fillon</h2>
+    💪
+  </div>
+</div>
+
+<div style="clear: both;">
+  <div style="float: left;">
+    <img src="/assets/img/men_face.jpg" alt="" style="float: right; margin-top: 1em;width:30%">
+    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Paolo Ferreira</h2>
+    💪 a Locomotiva
+  </div>
+</div>
+
+<div style="clear: both;">
+  <div style="float: left;">
+    <img src="/assets/img/men_face.jpg" alt="" style="float: left; margin-top: 1em;width:30%">
+    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Thierry Drolez</h2>
+    💪
+  </div>
+</div>
+
+<div style="clear: both;">
+  <div style="float: left;">
+    <img src="/assets/img/men_face.jpg" alt="" style="float: right; margin-top: 1em;width:30%">
+    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Clara Drolez</h2>
+    💪
+  </div>
+</div>
+
+<div style="clear: both;">
+  <div style="float: left;">
+    <img src="/assets/img/men_face.jpg" alt="" style="float: left; margin-top: 1em;width:30%">
+    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Jordan</h2>
+    💪
+  </div>
+</div>
 
 💪
 🌟 
