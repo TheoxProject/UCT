@@ -31,28 +31,28 @@ Vous pouvez trouver sur cette page la listes des courses de la région Auvergne 
 <iframe src="/Calendrier_courses/map_courses.html" width="900" height="600"></iframe>
 
 
-# Mars :
+## Mars :
 <iframe src="/Calendrier_courses/map_courses_March.html" width="900" height="600"></iframe>
 
-# Avril :
+## Avril :
 <iframe src="/Calendrier_courses/map_courses_April.html" width="900" height="600"></iframe>
 
-# Mai :
+## Mai :
 <iframe src="/Calendrier_courses/map_courses_May.html" width="900" height="600"></iframe>
 
-# Juin :
+## Juin :
 <iframe src="/Calendrier_courses/map_courses_June.html" width="900" height="600"></iframe>
 
-# Juillet :
+## Juillet :
 <iframe src="/Calendrier_courses/map_courses_July.html" width="900" height="600"></iframe>
 
-# Août :
+## Août :
 <iframe src="/Calendrier_courses/map_courses_August.html" width="900" height="600"></iframe>
 
-# Septembre :
+## Septembre :
 <iframe src="/Calendrier_courses/map_courses_September.html" width="900" height="600"></iframe>
 
-# Octobre :
+## Octobre :
 <iframe src="/Calendrier_courses/map_courses_October.html" width="900" height="600"></iframe>
 
 
