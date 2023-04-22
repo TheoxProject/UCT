@@ -18,22 +18,22 @@ accent_image: /assets/img/homePicture.jpg
   <div style="float: left;">
     <img src="/assets/img/men_face.jpg" alt="" style="float: left; margin-top: 1em;width:40%">
     <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;"> Stéphane Pugin-Bron </h2>
-     💪 Le Michel du groupe 
+     💪 
   </div>
 </div>
 
 <div style="clear: both;">
   <div style="float: left;">
     <img src="/assets/img/men_face.jpg" alt="" style="float: right; margin-top: 1em;width:40%">
-    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Rudy</h2>
-    💪 Capitaine de route
+    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Rudy Garcia-Fernandes</h2>
+    💪 
   </div>
 </div>
 
 <div style="clear: both;">
   <div style="float: left;">
     <img src="/assets/img/men_face.jpg" alt="" style="float: left; margin-top: 1em;width:30%">
-    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Christian</h2>
+    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Christian Martin</h2>
     💪
   </div>
 </div>
@@ -81,10 +81,8 @@ accent_image: /assets/img/homePicture.jpg
 <div style="clear: both;">
   <div style="float: left;">
     <img src="/assets/img/men_face.jpg" alt="" style="float: left; margin-top: 1em;width:30%">
-    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Jordan</h2>
+    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Jordan Jackson</h2>
     💪
   </div>
 </div>
-
-💪
-🌟 
+ 

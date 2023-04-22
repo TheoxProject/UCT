@@ -15,3 +15,6 @@ accent_color: rgb(225, 72, 5)
 
 
 ## <j>Partenaires</j>
+
+
+![image](/assets/img/under_construction.jpg)
