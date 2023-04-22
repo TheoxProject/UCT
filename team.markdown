@@ -57,7 +57,7 @@ accent_image: /assets/img/homePicture.jpg
 <div style="clear: both;">
   <div style="float: left;">
     <img src="/assets/img/men_face.jpg" alt="" style="float: right; margin-top: 1em;width:30%">
-    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Paolo Ferreira</h2>
+    <h2 style="border-top-style: solid;border-top-width: 4px;margin-top: 9rem;">Paulo Ferreira</h2>
     💪 a Locomotiva
   </div>
 </div>
